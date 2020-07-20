@@ -1,3 +1,31 @@
 * {
-    
+    margin: 0;
+    padding: 0;
 }
+
+.personal-info{
+
+    img{
+        width: 10%;
+    }
+
+    ul{
+        li{
+            list-style-type: none;
+            margin-left: 20px;
+        };
+
+        .address-line-2 {
+            margin-left: 48px;
+        }
+    }
+
+    .fas {
+        margin-right: 14px;
+    }
+
+    .name {
+        margin-left: 47px;
+    }
+}
+
