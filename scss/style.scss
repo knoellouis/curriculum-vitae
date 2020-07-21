@@ -1,31 +1,133 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.personal-info{
+body{
+    font-family: 'Sora', sans-serif;
+}
 
-    img{
-        width: 10%;
+nav {
+    background-color: #e5e5e5;
+    color: #303960;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    font-size: 20px;
+
+    h1,h2{
+        font-weight: bold;
     }
 
-    ul{
-        li{
-            list-style-type: none;
-            margin-left: 20px;
-        };
+    a{
+    color: #303960;
+    padding: 40px;
+    font-size: 20px;
 
-        .address-line-2 {
-            margin-left: 48px;
-        }
+    &:hover{
+        color: #f8b24f;
     }
 
-    .fas {
-        margin-right: 14px;
-    }
-
-    .name {
-        margin-left: 47px;
     }
 }
 
+
+
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 90px;
+    background-color: #303960;
+    margin: 120px 50px;
+    padding: 100px 50px;
+    position: absolute;
+    overflow: hidden;
+    color: #e5e5e5;
+
+    .info-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 50%
+
+        
+    }
+    .exclamation{
+        color:#ea9a96; 
+        margin-left: 5px;
+        margin-right: 15px;
+     }
+
+     .period{
+        margin-left: 5px;
+        color:#ea9a96; 
+
+     }
+
+    .img-wrapper{
+        width: 50%;
+        img{
+            margin-left: 100px;
+            border-radius: 100%;
+            width: 40%;
+        }
+    }
+
+    
+    .icons{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 20px 20px 20px 0;
+
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            border: 2px solid #f8b24f;
+        }
+    }
+
+    a{
+        font-size: 20px;
+        color: #e5e5e5;
+        &:hover{
+            color: #f8b24f;
+        }
+    }
+
+    button{
+        padding: 15px 50px;
+        margin: 50px 20px 20px 0;
+        border: none;
+        border-radius: 50px;
+        background-color: #f8b24f;
+        color: #fff;
+        font-size: 20px;
+
+        &:hover{
+            color: #e5e5e5;
+            transform: scale(.98);
+            cursor: pointer;
+        }
+
+        i{
+            margin-right: 7px;
+        }
+    }
+
+    p{
+        font-size: 20px;
+        margin: 30px 0 30px 0;
+        line-height: 1.5;
+    }
+
+}
