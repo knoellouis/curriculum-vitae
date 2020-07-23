@@ -7,12 +7,39 @@
 }
 
 body {
-  
   position: relative;
+  font-family: $font-stack;
 }
 
 .all-content {
   margin: 0 50px;
+}
+
+.section-heading {
+  margin-bottom: 100px;
+  font-size: 25px;
+}
+
+.section-wrapper {
+  border-radius: 90px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 130px;
+  margin: 50px 0px;
+  -webkit-box-shadow: 0px 0px 24px 3px
+    rgba(0, 0, 0, 0.51);
+  box-shadow: 0px 0px 24px 3px
+    rgba(0, 0, 0, 0.301);
+}
+
+.img-wrapper {
+  width: 30%;
+
+  img {
+    margin-top: 20px;
+    border-radius: 100%;
+    width: 60%;
+  }
 }
 
 nav {
@@ -28,6 +55,7 @@ nav {
   height: 100px;
   font-size: 20px;
   padding: 0 3%;
+  z-index: 5;
 
   .nav-icons {
     display: flex;
@@ -50,7 +78,7 @@ nav {
     font-size: 22px;
 
     &:hover {
-      color: #f8b24f;
+      color: $yellow;
     }
   }
 }
@@ -58,17 +86,11 @@ nav {
 #intro {
   display: flex;
   justify-content: space-evenly;
-  border-radius: 90px;
   background-color: $primary-color;
-  margin: 150px 0 0 0px;
-  padding: 100px 50px;
-  //   position: absolute;
-  overflow: hidden;
+  height: 750px;
+  margin: 150px 0 0 0;
+  padding: 160px 50px 100px 50px;
   color: #fff;
-  -webkit-box-shadow: 0px 0px 24px 3px
-    rgba(0, 0, 0, 0.51);
-  box-shadow: 0px 0px 24px 3px
-    rgba(0, 0, 0, 0.301);
 
   .info-wrapper {
     display: flex;
@@ -78,9 +100,14 @@ nav {
     h1 {
       font-size: 80px;
     }
+
+    p{
+        margin-top: 30px;
+        line-height: 2;
+    }
   }
   .exclamation {
-    color: #ea9a96;
+    color: $pink;
     font-size: 80px;
     margin-left: 5px;
     margin-right: 15px;
@@ -89,25 +116,25 @@ nav {
   .period {
     margin-left: 5px;
     font-size: 80px;
-    color: #ea9a96;
+    color: $pink;
   }
 
   .img-wrapper {
     width: 30%;
 
     img {
-      // margin-left: 100px;
-      margin-top: 50px;
+    //   margin-top: 20px;
       border-radius: 100%;
-      width: 60%;
+      width: 70%;
     }
   }
 
   .icons {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin: 20px 20px 20px 0;
+    margin: 50px 20px 20px 15px;
+    width: 70%;
 
     .icon {
       display: flex;
@@ -117,11 +144,11 @@ nav {
       width: 50px;
       height: 50px;
       border-radius: 100%;
-      border: 2px solid #f8b24f;
+      border: 2px solid $yellow;
 
       &:hover {
         a {
-          color: #f8b24f;
+          color: $yellow;
         }
 
         transform: scale(0.9);
@@ -136,10 +163,10 @@ nav {
 
   button {
     padding: 15px 50px;
-    margin: 20px 20px 20px 0;
+    margin: 40px 20px 20px 0;
     border: none;
     border-radius: 50px;
-    background-color: #f8b24f;
+    background-color: $yellow;
     color: #fff;
     font-size: 20px;
 
@@ -166,46 +193,85 @@ nav {
 }
 
 #about {
-  width: 100%;
-  border-radius: 90px;
   background-color: #fff;
-  margin: 50px 0px;
-  padding: 100px;
-  overflow: hidden;
   color: $primary-color;
-  -webkit-box-shadow: 0px 0px 24px 3px
-    rgba(0, 0, 0, 0.51);
-  box-shadow: 0px 0px 24px 3px
-    rgba(0, 0, 0, 0.301);
 
-    .about-heading{
-        margin-bottom: 40px;
-    }
+  .section-heading {
+    width: 45%;
+    margin-bottom: 0;
+  }
 
   .about-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
+  }
+
+  .description {
+    padding-top: 135px;
+    width: 45%;
+    h1 {
+      font-size: 40px;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 2;
+    }
+  }
+
+  .personal-info {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    .profile-img-wrapper {
+      text-align: center;
+      margin-bottom: 20px;
+      img {
+        width: 30%;
+        border-radius: 100%;
+      }
+    }
+    .info-section-wrapper {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 45px;
+      -webkit-box-shadow: 0px 0px 24px 3px
+        rgba(0, 0, 0, 0.479);
+      box-shadow: 0px 0px 24px 3px
+        rgba(0, 0, 0, 0.082);
+    }
+
+    .info-section {
+      width: 50%;
+      margin: 20px 0;
+      padding: 20px;
+    }
+    .info {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-self: center;
+      padding: 15px;
+      margin-bottom: 10px;
+      h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
   }
 }
 
 #skills {
-  border-radius: 90px;
   background-color: $primary-color;
-  margin: 50px 0px;
-  padding: 100px;
-  overflow: hidden;
   color: #fff;
-  -webkit-box-shadow: 0px 0px 24px 3px
-    rgba(0, 0, 0, 0.51);
-  box-shadow: 0px 0px 24px 3px
-    rgba(0, 0, 0, 0.301);
 
-  .all-skills-heading {
-    margin-bottom: 40px;
-    font-size: 25px;
-  }
   .all-skills-wrapper {
     display: flex;
     justify-content: space-between;
@@ -229,48 +295,16 @@ nav {
       margin-top: 15px;
       background-color: $secondary-color;
       border-radius: 5px;
+      position: relative;
 
-      .progress-skill-bar {
+      span {
+        position: relative;
+        overflow: hidden;
+        display: block;
         height: 8px;
-        background-color: #ea9a96;
+        background-color: $pink;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
-      }
-      #html-skill {
-        width: 80%;
-      }
-      #css-skill {
-        width: 70%;
-      }
-
-      #bootstrap-skill {
-        width: 80%;
-      }
-
-      #javascript-skill {
-        width: 60%;
-      }
-
-      #jquery-skill {
-        width: 70%;
-      }
-
-      #node-skill {
-        width: 70%;
-      }
-
-      #express-skill {
-        width: 70%;
-      }
-
-      #SQL-skill {
-        width: 60%;
-      }
-      #mongoDB-skill {
-        width: 60%;
-      }
-      #git-github-skill {
-        width: 70%;
       }
     }
   }
@@ -279,5 +313,121 @@ nav {
   }
   .skills-wrapper-right {
     width: 45%;
+  }
+}
+
+#projects {
+  background-color: #fff;
+  color: $primary-color;
+}
+
+#contact {
+  background-color: $primary-color;
+  color: $secondary-color;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+
+  .contact-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .my-contact-info {
+      width: 45%;
+      display: flex;
+      justify-content: left;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .contact-info-wrapper {
+        width: 70%;
+        display: flex;
+        // justify-content: space-between;
+
+        i {
+          font-size: 25px;
+          color: $yellow;
+          margin: 5px 60px 0 0;
+        }
+        .contact-info {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 50px;
+          font-size: 20px;
+
+          h3 {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .contact-form {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+
+      button {
+        padding: 15px 20px;
+        margin: 20px 20px 20px 0;
+        border: none;
+        border-radius: 50px;
+        background-color: $yellow;
+        color: #fff;
+        font-size: 15px;
+        width: 28%;
+        text-align: center;
+
+        &:hover {
+          transform: scale(0.98);
+          cursor: pointer;
+          color: $secondary-color;
+        }
+      }
+
+      textarea {
+        border-radius: 25px;
+        font-family: $font-stack;
+        font-size: 15px;
+        padding: 15px 25px;
+        color: $primary-color;
+
+        &:focus{
+            outline: none;
+        }
+      }
+      .contact-form-element {
+        margin-bottom: 20px;
+        border-radius: 50px;
+        padding: 10px 30px;
+        border: none;
+        font-family: $font-stack;
+        font-size: 15px;
+        color: $primary-color;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.back-to-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $primary-color;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+
+  a {
+    font-size: 50px;
+    color: $primary-color;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 }

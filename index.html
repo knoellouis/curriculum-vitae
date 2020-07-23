@@ -7,6 +7,8 @@
     <title>Keitha Noel-Louis</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d57f35d6bc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,31 +17,31 @@
         <nav>
             <h1>Keitha Noel-Louis</h1>
             <div class="nav-icons">
-                <a href=""><i class="fas fa-home"></i></i></a>
-                <a href=""><i class="fas fa-user"></i></a>
-                <a href=""><i class="fas fa-laptop-code"></i></i></a>
-                <a href=""><i class="fas fa-briefcase"></i></a>
-                <a href=""><i class="fas fa-phone"></i></a>
-                <!-- <a href=""><i class="fas fa-cloud-download-alt"></i></a> -->
+                <a href="#intro" class="scrollTo"><i class="fas fa-home"></i></i></a>
+                <a href="#about" class="scrollTo"><i class="fas fa-user"></i></a>
+                <a href="#skills" class="scrollTo"><i class="fas fa-laptop-code"></i></i></a>
+                <a href="#projects" class="scrollTo"><i class="fas fa-briefcase"></i></a>
+                <a href="#contact" class="scrollTo"><i class="fas fa-phone"></i></a>
             </div>
             <h2>Developer</h2>
         </nav>
     </div>
     <div class="all-content">
-        
 
-        <div id="intro">
+        <div id="intro" class="section-wrapper">
 
             <div class="img-wrapper">
                 <div class="profile-img">
                     <img src="photos/IMG_6475.JPG" alt="">
-                </div>  
-                
+                </div>
+
                 <div class="icons">
-                    <div class="icon"><a href=""><i class="fab fa-github"></i></a></div>
-                    <div class="icon"><a href=""><i class="fab fa-linkedin-in"></i></a></div>
-                    <div class="icon"><a href=""><i class="fab fa-xing"></i></a></div>
-                    <div class="icon"><a href=""><i class="fab fa-twitter"></i></a></div>
+                    <div class="icon"><a href="https://github.com/knoellouis"><i class="fab fa-github"></i></a></div>
+                    <div class="icon"><a href="https://www.linkedin.com/in/keitha-noel-louis-18aa78151/"><i
+                                class="fab fa-linkedin-in"></i></a></div>
+                    <div class="icon"><a href="https://www.xing.com/profile/Keitha_NoelLouis/cv"><i
+                                class="fab fa-xing"></i></a></div>
+                    <!-- <div class="icon"><a href=""><i class="fab fa-twitter"></i></a></div> -->
                 </div>
             </div>
 
@@ -49,160 +51,179 @@
                     <h1>Hello<span class="exclamation">!</span> <br> I'm Keitha<span class="period">.</span></h1>
                     <p>A Frontend Web Developer, living in Hamburg.<br>I create modern and responsive web apps!</p>
                 </div>
-    
-                
-    
+
+
+
                 <div>
                     <button><i class="fas fa-cloud-download-alt"></i>Download CV</button>
-                    <button>Hire Me</button>
+
                 </div>
             </div>
-                
+
         </div>
 
-        <div id="about">
-            <div class="about-heading">
+        <div id="about" class="section-wrapper">
+            <div class="section-heading">
                 <h1>About Me</h1>
             </div>
             <div class="about-wrapper">
                 <div class="description">
                     <h1>Hello,</h1>
-                    <div><p>I'm Keitha, a Junior Frontend Developer with a passion for code. </p></div>
+                    <div>
+                        <p>I'm Keitha, an ambitious problem solving Junior Frontend Developer. Experience creating both
+                            logical and innovative solutions to complexed web problems using HTML, CSS and Javascript.
+                            Thorough, precise and appreciative of clean code. Passion for technology and mobile web
+                            applications as well as user experience. Eager to learn and enjoys working in team-based
+                            environments. </p>
+                    </div>
                 </div>
-                
+
                 <div class="personal-info">
-                    <div>
-                        <h3>Name:</h3>
-                        <p>Keitha Noel-Louis</p>
+                    <div class="profile-img-wrapper">
+                        <div>
+                            <img src="photos/IMG_6477.JPG" alt="">
+                        </div>
                     </div>
-                    <div>
-                        <h3>Email:</h3>
-                        <p>knoellouis@gmail.com</p>
+
+                    <div class="info-section-wrapper">
+                        <div class="info-section">
+                            <div class="info">
+                                <h3>Name:</h3>
+                                <p>Keitha Noel-Louis</p>
+                            </div>
+                            <div class="info">
+                                <h3>Email:</h3>
+                                <p>knoellouis@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-section">
+                            <div class="info">
+                                <h3>Location:</h3>
+                                <p>Hamburg, DE</p>
+                            </div>
+                            <div class="info">
+                                <h3>Date of Birth:</h3>
+                                <p>December 25, 1990</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Location:</h3>
-                        <p>Hamburg, DE</p>
-                    </div>
-                    <div>
-                        <h3>Date of Birth:</h3>
-                        <p>December 25 1990</p>
-                    </div>
-                    
+
                 </div>
+
+
+
             </div>
-            
-           
         </div>
 
-        <div id="skills">
-            <div class="all-skills-heading">
+        <div id="skills" class="section-wrapper">
+            <div class="section-heading">
                 <h1>Skills</h1>
                 <div class="heading-line"></div>
             </div>
             <div class="all-skills-wrapper">
-                
+
                 <div class="skills-wrapper-left">
                     <div class="skill">
                         <div class="skill-heading">
                             <h3>HTML</h4>
-                            <p>80%</p>
+                                <p>80%</p>
                         </div>
                         <div class="full-skill-bar">
-                            <div class="progress-skill-bar" id="html-skill"></div>
+                            <span style="width: 80%;"></span>
                         </div>
                     </div>
 
                     <div class="skill">
                         <div class="skill-heading">
                             <h3>CSS / Sass</h4>
-                            <p>70%</p>
+                                <p>70%</p>
                         </div>
                         <div class="full-skill-bar">
-                            <div class="progress-skill-bar" id="css-skill"></div>
+                            <span style="width: 70%;"></span>
                         </div>
                     </div>
 
                     <div class="skill">
                         <div class="skill-heading">
                             <h3>Bootstrap</h4>
-                            <p>80%</p>
+                                <p>80%</p>
                         </div>
                         <div class="full-skill-bar">
-                            <div class="progress-skill-bar" id="bootstrap-skill"></div>
+                            <span style="width: 80%;"></span>
                         </div>
                     </div>
-                
+
                     <div class="skill">
                         <div class="skill-heading">
                             <h3>Javascript(ES5 & ES6)</h4>
-                            <p>60%</p>
+                                <p>60%</p>
                         </div>
                         <div class="full-skill-bar">
-                            <div class="progress-skill-bar" id="javascript-skill"></div>
+                            <span style="width: 60%;"></span>
                         </div>
                     </div>
 
                     <div class="skill">
                         <div class="skill-heading">
                             <h3>jQuery</h4>
-                            <p>70%</p>
+                                <p>70%</p>
                         </div>
                         <div class="full-skill-bar">
-                            <div class="progress-skill-bar" id="jquery-skill"></div>
+                            <span style="width: 70%;"></span>
                         </div>
                     </div>
 
-                    
+
                 </div>
                 <div class="skills-wrapper-right">
 
                     <div class="skill">
                         <div class="skill-heading">
                             <h3>Node.js</h4>
-                            <p>70%</p>
+                                <p>70%</p>
                         </div>
                         <div class="full-skill-bar">
-                            <div class="progress-skill-bar" id="node-skill"></div>
+                            <span style="width: 70%;"></span>
                         </div>
                     </div>
 
                     <div class="skill">
                         <div class="skill-heading">
                             <h3>Express.js</h4>
-                            <p>70%</p>
+                                <p>70%</p>
                         </div>
                         <div class="full-skill-bar">
-                            <div class="progress-skill-bar" id="express-skill"></div>
+                            <span style="width: 70%;"></span>
                         </div>
                     </div>
 
                     <div class="skill">
                         <div class="skill-heading">
                             <h3>SQL</h4>
-                            <p>60%</p>
+                                <p>60%</p>
                         </div>
                         <div class="full-skill-bar">
-                            <div class="progress-skill-bar" id="SQL-skill"></div>
+                            <span style="width: 60%;"></span>
                         </div>
                     </div>
 
                     <div class="skill">
                         <div class="skill-heading">
                             <h3>MongoDB</h4>
-                            <p>60%</p>
+                                <p>60%</p>
                         </div>
                         <div class="full-skill-bar">
-                            <div class="progress-skill-bar" id="mongoDB-skill"></div>
+                            <span style="width: 60%;"></span>
                         </div>
                     </div>
 
                     <div class="skill">
                         <div class="skill-heading">
                             <h3>Git / Github</h4>
-                            <p>70%</p>
+                                <p>70%</p>
                         </div>
                         <div class="full-skill-bar">
-                            <div class="progress-skill-bar" id="git-github-skill"></div>
+                            <span style="width: 70%;"></span>
                         </div>
                     </div>
 
@@ -210,17 +231,64 @@
             </div>
         </div>
 
-        <div id="projects">
-            
-        </div>
-        <div id="contact">
+        <div id="projects" class="section-wrapper">
+            <div class="section-heading">
+                <h1>Projects</h1>
+            </div>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
 
         </div>
 
+        <div id="contact" class="section-wrapper">
+            <div class="section-heading">
+                <h1>Get in touch</h1>
+            </div>
+            <div class="contact-wrapper">
+                <div class="my-contact-info">
+                    <div class="contact-info-wrapper">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-info">
+                            <h3>Phone</h3>
+                            <p>+49 0175 629 6889</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <p>knoellouis@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-wrapper">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-info">
+                            <h3>Location</h3>
+                            <p>Gertrud-Meyer-Straße 1C <br>22335, Hamburg</p>
+                        </div>
+                    </div>
 
+                </div>
+
+                <form class="contact-form" action="/" method="POST">
+                    <input class="contact-form-element" type="text" name="_replyto" placeholder="Email">
+                    <input class="contact-form-element" type="text" placeholder="Subject">
+                    <textarea class="" name="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    <button class="" type="submit">Send Message </button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="back-to-top">
+            <a href="#intro" class="scrollTo"><i class="fas fa-arrow-up"></i></a>
+            <p>back to top</p>
+        </div>
+        
     </div>
 
-    
+
 
 
     <script src="app.js"></script>
