@@ -29,7 +29,7 @@ $('.scrollTo').click(function(){
     if($(getElement).length) {
         var getOffset = $(getElement).offset().top;
         $('html,body').animate({
-            scrollTop: getOffset - 120
+            scrollTop: getOffset - 116.5
         }, 500);
     }
     return false;
