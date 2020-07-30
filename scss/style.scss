@@ -14,12 +14,16 @@ body {
 .all-content {
   padding: 0 4%;
 
+  .img-wrapper-mob {
+    display: none;
+  }
+
   .section-wrapper {
     border-radius: 90px;
     width: 100%;
     overflow: hidden;
     padding: 5% 8%;
-    margin: 2.5% 5%;
+    margin-top: 2.5%;
     -webkit-box-shadow: 0px 0px 24px 3px
       rgba(0, 0, 0, 0.51);
     box-shadow: 0px 0px 24px 3px
@@ -28,7 +32,7 @@ body {
     .section-heading {
       width: 100%;
       margin-bottom: 6.5%;
-      font-size: 23px;
+      font-size: 1.5rem;
       text-transform: uppercase;
     }
   }
@@ -39,16 +43,20 @@ body {
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     top: 0;
     left: 0;
     width: 100%;
-    font-size: 1.5rem;
     z-index: 1;
+    font-size: 1.5rem;
 
     .nav-name {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       width: 30%;
 
       h3 {
@@ -60,18 +68,21 @@ body {
     .nav-icons {
       display: flex;
       justify-content: center;
-      // width: 40%;
-      background-color: $secondary-color;
+      background-color: transparent;
+      width: 30%;
 
       a {
         color: $primary-color;
-        padding: 2rem;
-        font-size: 1.5rem;
+        padding: 40px;
 
         &:hover {
           color: $yellow;
         }
       }
+    }
+
+    .nav-space {
+      width: 30%;
     }
   }
 
@@ -80,15 +91,72 @@ body {
     justify-content: center;
     align-items: center;
     background-color: $primary-color;
-    margin: 10% 0 0 0;
+    margin: 180px 0 0 0;
     color: #fff;
 
     .img-info-wrapper {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+
+      .info-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+
+        .greeting {
+          h1 {
+            margin-top: 10%;
+            font-size: 6rem;
+
+            .exclamation {
+              color: $pink;
+              font-size: 6rem;
+              margin-left: 1%;
+            }
+
+            .period {
+              margin-left: 1%;
+              font-size: 6rem;
+              color: $pink;
+            }
+          }
+
+          p {
+            font-size: 1.5rem;
+            margin: 60px 0 30px 0;
+            line-height: 1.5;
+          }
+        }
+
+        button {
+          border: none;
+          border-radius: 50px;
+          background-color: $yellow;
+          color: #fff;
+          font-size: 1.5rem;
+          width: 50%;
+          margin-top: 50px;
+          padding: 10px 30px;
+
+          &:hover {
+            transform: scale(0.98);
+            cursor: pointer;
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          i {
+            margin-right: 5%;
+          }
+        }
+      }
 
       .img-wrapper {
+        margin: 50px 0 0 50px;
         width: 25%;
         img {
           border-radius: 100%;
@@ -99,7 +167,7 @@ body {
           display: flex;
           justify-content: space-around;
           width: 100%;
-          margin-top: 15px;
+          margin-top: 25px;
 
           .icon {
             display: flex;
@@ -125,102 +193,6 @@ body {
           }
         }
       }
-
-      .info-wrapper {
-        display: flex;
-        flex-direction: column;
-        padding-left: 150px;
-        width: 50%;
-
-        h1 {
-          margin-top: 10%;
-          font-size: 6rem;
-
-          .exclamation {
-            color: $pink;
-            font-size: 6rem;
-            margin-left: 1%;
-          }
-
-          .period {
-            margin-left: 1%;
-            font-size: 6rem;
-            color: $pink;
-          }
-        }
-
-        p {
-          font-size: 20px;
-          margin: 30px 0 30px 0;
-          line-height: 1.5;
-        }
-
-        .links {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          width: 100%;
-          margin-top: 20px;
-
-          button {
-            border: none;
-            border-radius: 50px;
-            background-color: $yellow;
-            color: #fff;
-            font-size: 20px;
-            width: 50%;
-            margin-bottom: 20px;
-            padding: 10px 20px;
-
-            &:hover {
-              transform: scale(0.98);
-              cursor: pointer;
-            }
-
-            &:focus {
-              outline: none;
-            }
-
-            i {
-              margin-right: 5%;
-            }
-          }
-        }
-      }
-
-      // .scroll-to-projects {
-      //   border-radius: 30px;
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: center;
-      //   width: 15%;
-      //   height: 100px;
-      //   margin: auto;
-      //   background-color: rgba(
-      //     255,
-      //     255,
-      //     255,
-      //     0.144
-      //   );
-      //   border: 2px $pink solid;
-      //   text-align: center;
-
-      //   &:hover {
-      //     transform: scale(0.98);
-      //   }
-
-      //   p {
-      //     color: #fff;
-      //     padding-bottom: 15px;
-      //   }
-
-      //   a {
-      //     font-size: 1.2rem;
-      //     color: #fff;
-      //     text-decoration: none;
-      //     padding: 20;
-      //   }
-      // }
     }
   }
 
@@ -228,21 +200,12 @@ body {
     background-color: #fff;
     color: $primary-color;
     width: 100%;
-    margin: 2.5% 0 0 0;
-    // padding: 3.5% 5%;
-
-    .section-heading {
-      // margin-bottom: 0;
-      // text-align: center;
-    }
 
     .about-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      //   justify-content: space-between;
       width: 100%;
-      // margin-top: 100px;
 
       .description {
         width: 30%;
@@ -258,7 +221,6 @@ body {
         width: 60%;
         display: flex;
         flex-direction: column;
-        // margin-top: 75px;
         justify-content: center;
         border-radius: 45px;
 
@@ -266,7 +228,6 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          // padding: 50px;
 
           .info-section {
             display: flex;
@@ -310,95 +271,77 @@ body {
       justify-content: space-between;
       width: 100%;
 
-      .skill {
-        margin-bottom: 50px;
-      }
-      .skill-heading {
-        h3 {
-          display: inline;
-        }
-        p {
-          display: inline;
-          float: right;
-        }
-      }
-      .full-skill-bar {
-        width: 100%;
-        height: 8px;
-        margin-top: 15px;
-        background-color: $secondary-color;
-        border-radius: 5px;
-        position: relative;
+      .skills-wrapper-left,
+      .skills-wrapper-right {
+        width: 45%;
 
-        span {
-          position: relative;
-          overflow: hidden;
-          display: block;
+        .skill {
+          margin-bottom: 50px;
+        }
+        .skill-heading {
+          h3 {
+            display: inline;
+          }
+          p {
+            display: inline;
+            float: right;
+          }
+        }
+        .full-skill-bar {
+          width: 100%;
           height: 8px;
-          background-color: $pink;
-          border-top-left-radius: 5px;
-          border-bottom-left-radius: 5px;
+          margin-top: 15px;
+          background-color: $secondary-color;
+          border-radius: 5px;
+          position: relative;
+
+          span {
+            position: relative;
+            overflow: hidden;
+            display: block;
+            height: 8px;
+            background-color: $pink;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
         }
       }
-    }
-    .skills-wrapper-left {
-      width: 45%;
-    }
-    .skills-wrapper-right {
-      width: 45%;
     }
   }
 
   #projects {
     background-color: #fff;
     color: $primary-color;
-    margin-left: 0;
-    // width: 100%;
 
-    .projects-wrapper {
+    .all-projects-wrapper {
       display: flex;
+      width: 100%;
       justify-content: space-between;
-
       .project {
-        background-color: $secondary-color;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        background-color: #fff;
+        border-radius: 50px;
         width: 32%;
+        padding: 40px 20px;
         -webkit-box-shadow: 0px 0px 24px 3px
           rgba(0, 0, 0, 0.479);
         box-shadow: 0px 0px 24px 3px
           rgba(0, 0, 0, 0.082);
-        padding: 15px;
-        border-radius: 25px;
 
         .title {
-          padding: 5px;
-          height: 33.3%;
-          margin: 10px 0;
+          display: flex;
           width: 100%;
+          margin: 0 0 15px 15px;
 
           h2 {
+            font-size: 2rem;
             text-align: center;
-            text-transform: uppercase;
-          }
-        }
-
-        .description {
-          padding: 10px;
-          height: 33.3%;
-          width: 90%;
-          p {
-            text-align: center;
-            padding: 20px;
-            width: 100%;
-            font-size: 17px;
           }
         }
 
         .img-wrapper {
-          width: 90%;
+          width: 100%;
           img {
             border-radius: 25px;
             width: 100%;
@@ -408,17 +351,32 @@ body {
               rgba(0, 0, 0, 0.082);
           }
         }
+        .description-links-wrapper {
+          padding-top: 50px;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          .description{
+            height: 150px;
+            p {
+              text-align: left;
+              width: 100%;
+              font-size: 1.5rem;
+            }
+          }
+        }
 
         .links {
           display: flex;
           justify-content: space-evenly;
-          margin-top: 10px;
+          margin-top: 40px;
           width: 100%;
 
           .button-link {
             margin-bottom: 20px;
             border-radius: 25px;
-            padding: 10px 25px;
+            padding: 5px 15px;
             -webkit-box-shadow: 0px 0px 24px 3px
               rgba(0, 0, 0, 0.479);
             box-shadow: 0px 0px 24px 3px
@@ -426,6 +384,7 @@ body {
             text-align: center;
             color: $primary-color;
             text-decoration: none;
+            font-size: 1.5rem;
 
             &:hover {
               transform: scale(0.98);
@@ -452,7 +411,6 @@ body {
     color: $secondary-color;
     width: 100%;
     display: block;
-    margin-left: 0;
     margin-bottom: 10px;
 
     .section-heading {
@@ -465,21 +423,21 @@ body {
       justify-content: space-between;
 
       .my-contact-info {
-        width: 45%;
+        width: 50%;
         display: flex;
         justify-content: left;
         align-items: flex-start;
         flex-direction: column;
 
         .contact-info-wrapper {
-          width: 70%;
+          width: 50%;
           display: flex;
-          // justify-content: space-between;
+          margin-left: 100px;
 
           i {
             font-size: 25px;
             color: $yellow;
-            margin: 5px 60px 0 0;
+            margin: 5px 20px 0 0;
           }
           .contact-info {
             display: flex;
@@ -498,24 +456,6 @@ body {
         width: 45%;
         display: flex;
         flex-direction: column;
-
-        button {
-          padding: 15px 20px;
-          margin: 20px 20px 20px 0;
-          border: none;
-          border-radius: 50px;
-          background-color: $yellow;
-          color: #fff;
-          font-size: 18px;
-          width: 50%;
-          text-align: center;
-
-          &:hover {
-            transform: scale(0.98);
-            cursor: pointer;
-            color: $secondary-color;
-          }
-        }
 
         textarea {
           border-radius: 25px;
@@ -538,6 +478,24 @@ body {
           color: $primary-color;
           &:focus {
             outline: none;
+          }
+        }
+
+        button {
+          padding: 15px 20px;
+          margin: 20px 20px 20px 0;
+          border: none;
+          border-radius: 50px;
+          background-color: $yellow;
+          color: #fff;
+          font-size: 18px;
+          width: 50%;
+          text-align: center;
+
+          &:hover {
+            transform: scale(0.98);
+            cursor: pointer;
+            color: $secondary-color;
           }
         }
       }
