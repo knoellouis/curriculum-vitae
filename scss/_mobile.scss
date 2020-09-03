@@ -1,28 +1,29 @@
 @media (max-width: 1505px) {
   .all-content {
-    padding: 0 4%;
+    padding: 0 2.5%;
     .section-wrapper {
       border-radius: 50px;
       width: 80%;
       margin: 2.5% 0 2.5% 15%;
     }
 
-    .nav-wrapper {
+    .nav {
       display: none;
     }
 
     .nav-mobile {
+      position: fixed;
       display: flex;
       flex-direction: column;
-      height: 750px;
+      height: 60vh;
       width: 15%;
       padding: 0;
-      margin: 2% 0 0 1.5%;
+      margin: 0;
       background-color: transparent;
 
       .img-wrapper-mob {
         display: block;
-        width: 90%;
+        width: 80%;
 
         img {
           width: 100%;
@@ -35,13 +36,11 @@
         align-items: center;
         justify-content: center;
         width: 0;
-        // width: 20px;
-        // height: 20px;
-        // color: #fff;
+        font-size: 2rem;
       }
     }
 
-    #intro {
+    .intro {
       margin: 2.5% 0 0 15%;
       height: 750px;
       width: 85%;
@@ -77,7 +76,7 @@
       }
     }
 
-    #about {
+    .about {
       width: 85%;
       margin: 2.5% 0 2.5% 15%;
 
@@ -108,7 +107,7 @@
       }
     }
 
-    #skills {
+    .skills {
       width: 85%;
       margin: 2.5% 0 2.5% 15%;
 
@@ -123,7 +122,7 @@
       }
     }
 
-    #projects {
+    .projects {
       background-color: #fff;
       color: $primary-color;
       width: 85%;
@@ -221,7 +220,7 @@
       }
     }
 
-    #contact {
+    .contact {
       width: 85%;
       margin: 2.5% 0 10px 15%;
 

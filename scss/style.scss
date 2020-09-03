@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   position: relative;
   font-family: $font-stack;
@@ -37,7 +41,7 @@ body {
     }
   }
 
-  nav {
+  .nav {
     background-color: $secondary-color;
     color: $primary-color;
     position: fixed;
@@ -86,7 +90,7 @@ body {
     }
   }
 
-  #intro {
+  .intro {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,7 +200,7 @@ body {
     }
   }
 
-  #about {
+  .about {
     background-color: #fff;
     color: $primary-color;
     width: 100%;
@@ -260,7 +264,7 @@ body {
     }
   }
 
-  #skills {
+  .skills {
     background-color: $primary-color;
     color: #fff;
     width: 100%;
@@ -309,7 +313,7 @@ body {
     }
   }
 
-  #projects {
+  .projects {
     background-color: #fff;
     color: $primary-color;
 
@@ -406,7 +410,7 @@ body {
     }
   }
 
-  #contact {
+  .contact {
     background-color: $primary-color;
     color: $secondary-color;
     width: 100%;
