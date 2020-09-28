@@ -1,63 +1,59 @@
-:root {
-  --color-primary: #303960;
-  --color-secondary: #e5e5e5;
-  --color-yellow: #f8b24f;
-  --color-pink: #ea9a96;
+// COLOR VARIABLES
+$color-primary: #303960;
 
-  --color-grey-light-1: #faf9f9;
-  --color-grey-light-2: #f4f2f2;
-  --color-grey-light-3: #f0eeee;
-  --color-grey-light-4: #ccc;
+$color-primary-dark: #1a203d;
 
-  --color-grey-dark-1: #333;
-  --color-grey-dark-2: #777;
-  --color-grey-dark-3: #999;
+$color-secondary: #f8b24f;
 
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+$color-white: #ffffff;
 
-  --line: 1px solid var(--color-grey-light-2);
+$color-white-fade: #ffffff21;
 
-  // $font-stack: Ubuntu, sans-serif;
-}
+// $color-pink: #ea9a96;
 
-$bp-largest: 75em; //1200px
-$bp-large: 68.75em; //1100px
-$bp-medium: 56.25em; //900px
-$bp-small: 37.5em; //600px
-$bp-smallest: 31.25em; //500px
+$shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+$shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
 
-* {
-  margin: 0;
-  padding: 0;
-}
+
+// FONT VARIABLES
+$font-primary: 'Lato', sans-serif;;
+
+// RESPONSIVE BREAKPOINTS
+$bg-collosal: 100em;  // 1600px
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-//   box-sizing: border-box;
-  font-size: 62.5%;
+    box-sizing: border-box;
+    font-size: 62.5%;
 
-//   @media only screen and (max-width: $bp-large) {
-//     font-size: 50%;
-//   }
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+      }
+
+    @media only screen and (min-width: $bg-collosal) {
+        font-size: 80%;
+      }
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;;
-  font-weight: 400;
-//   line-height: 1.6;
-//   background-image: linear-gradient(
-//     to right bottom,
-//     var(--color-primary-light),
-//     var(--color-primary-dark)
-//   );
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   color: var(--color-grey-dark-2);
-//   min-height: 100vh;
+    font-family: $font-primary;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: min-content repeat(4, min-content) min-content;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 3rem;
 }

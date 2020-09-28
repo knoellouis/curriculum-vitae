@@ -4,388 +4,366 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keitha Noel-Louis</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Keitha Noel&dash;Louis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d57f35d6bc.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="container">
-        <header class="header">
-            <nav class="navbar">
-                <div class="navbar__photo">
-                    <img src="photos/IMG_6468 small.JPG" alt="" class="navbar__photo--img">
-                </div>
-                <div class="navbar__name">Keitha Noel-Louis</div>
-                <div class="navbar__role">Front-end Web Developer</div>
-                <ul class="main-nav">
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">
-                        </a>
-                    </li>
-                </ul>
+<body class="container">
 
-                
-            </nav>
-        </header>
-    </div>
-    <!-- <div class="all-content">
-        <nav class="nav">
-            <div class="nav-name">
-                <h1>Keitha Noel-Louis</h1>
-                <h3>Front-end Developer</h3>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__list-item">
+                <a href="#intro" class="nav__list-item--link scrollTo">
+                    <svg class="nav__list-item--link--icon">
+                        <use xlink:href="img/sprite.svg#icon-home-run"></use>
+                    </svg>
+                    <!-- <p class="nav__list-item--link--description">home</p>  -->
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="#about" class="nav__list-item--link scrollTo">
+                    <svg class="nav__list-item--link--icon">
+                        <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg>
+                    <!-- <p class="nav__list-item--link--description">about</p>  -->
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="#skills" class="nav__list-item--link scrollTo">
+                    <svg class="nav__list-item--link--icon">
+                        <use xlink:href="img/sprite.svg#icon-coding"></use>
+                    </svg>
+                    <!-- <p class="nav__list-item--link--description">skills</p>  -->
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="#projects" class="nav__list-item--link scrollTo">
+                    <svg class="nav__list-item--link--icon">
+                        <use xlink:href="img/sprite.svg#icon-menu"></use>
+                    </svg>
+                    <!-- <p class="nav__list-item--link--description">projects</p>  -->
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="#contact" class="nav__list-item--link scrollTo">
+                    <svg class="nav__list-item--link--icon">
+                        <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <!-- <p class="nav__list-item--link--description">contact</p>  -->
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="intro" id="intro">
+        <img class="intro__img" src="img/IMG_6468 small.JPG" alt="">
+        <div class="intro__greeting">
+            <div class="intro__greeting-heading">
+                <h1 class="intro__greeting-heading--heading heading-1 mb-md">Hello<span
+                        class="intro__greeting-exclamation">!</span> <br> I'm Keitha<span
+                        class="intro__greeting-period">.</span></h1>
             </div>
-
-            <div class="nav-icons">
-                <a href="#intro" class="scrollTo"><i class="fas fa-home"></i></i></a>
-                <a href="#about" class="scrollTo"><i class="fas fa-user"></i></i></a>
-                <a href="#skills" class="scrollTo"><i class="fas fa-laptop-code"></i></i></a>
-                <a href="#projects" class="scrollTo"><i class="fas fa-th-large"></i></a>
-                <a href="#contact" class="scrollTo"><i class="fas fa-envelope"></i></a>
-            </div>
-        </nav>
-
-        <div id="intro" class="intro section-wrapper">
-            <div class="img-info-wrapper">
-
-                <div class="info-wrapper">
-                    <div class="greeting">
-                        <h1>Hello<span class="exclamation">!</span> <br> I'm Keitha<span class="period">.</span></h1>
-                        <p>A Frontend Web Developer, living in Hamburg. <br>I create modern and responsive web apps!</p>
-                    </div>
-
-
-                    <button><i class="fas fa-cloud-download-alt"></i>Download CV</button>
-
-                </div>
-
-                <div class="img-wrapper">
-                    <img src="photos/IMG_6468 small.JPG" alt="">
-                    <div class="icons-wrapper">
-                        <div class="icon"><a href="https://github.com/knoellouis"><i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="icon"><a href="https://www.linkedin.com/in/keitha-noel-louis-18aa78151/">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                        <div class="icon"><a href="https://www.xing.com/profile/Keitha_NoelLouis/cv"><i
-                                    class="fab fa-xing"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-        </div>
-
-        <div id="about" class="about section-wrapper">
-            <div class="section-heading">
-                <h1>About Me</h1>
-            </div>
-            <div class="about-wrapper">
-                <div class="description">
-                    <p> An ambitious Junior Frontend Developer with excellent problem solving skills. Experience
-                        creating
-                        both
-                        logical and innovative solutions to complexed web problems using HTML, CSS and
-                        Javascript.
-                        Thorough, precise and appreciative of clean code. Passion for technology and mobile web
-                        applications as well as user experience. Eager to learn and enjoys working in team-based
-                        environments. </p>
-                </div>
-                <div class="personal-info">
-                    <div class="info-section-wrapper">
-                        <div class="info-section">
-                            <div class="info">
-                                <h3>Name:</h3>
-                                <p>Keitha Noel-Louis</p>
-                            </div>
-                            <div class="info">
-                                <h3>Email:</h3>
-                                <p>knoellouis@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="info-section">
-                            <div class="info">
-                                <h3>Location:</h3>
-                                <p>Hamburg, DE</p>
-                            </div>
-                            <div class="info">
-                                <h3>Date of Birth:</h3>
-                                <p>December 25, 1990</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="intro__greeting-para">
+                <p>Frontend Web Developer <br>With a passion for modern and responsive web apps!</p>
             </div>
         </div>
+    </section>
 
-        <div id="skills" class="skills section-wrapper">
-            <div class="section-heading">
-                <h1>Skills</h1>
-            </div>
-            <div class="all-skills-wrapper">
+    <section id="about" class="about">
 
-                <div class="skills-wrapper-left">
-                    <div class="skill">
-                        <div class="skill-heading">
-                            <h3>HTML</h4>
-                                <p>80%</p>
-                        </div>
-                        <div class="full-skill-bar">
-                            <span style="width: 80%;"></span>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill-heading">
-                            <h3>CSS / Sass</h4>
-                                <p>70%</p>
-                        </div>
-                        <div class="full-skill-bar">
-                            <span style="width: 70%;"></span>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill-heading">
-                            <h3>Bootstrap</h4>
-                                <p>80%</p>
-                        </div>
-                        <div class="full-skill-bar">
-                            <span style="width: 80%;"></span>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill-heading">
-                            <h3>Javascript(ES5 & ES6)</h4>
-                                <p>60%</p>
-                        </div>
-                        <div class="full-skill-bar">
-                            <span style="width: 60%;"></span>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill-heading">
-                            <h3>jQuery</h4>
-                                <p>70%</p>
-                        </div>
-                        <div class="full-skill-bar">
-                            <span style="width: 70%;"></span>
-                        </div>
-                    </div>
+        <h2 class="about__heading heading-2 mb-lg">About Me</h2>
+        <div class="about__info-section">
+            <p class="about__info-section--description mb-md"> Ambitious Junior Frontend Developer with excellent
+                problem solving
+                skills. Experience creating both logical and innovative solutions to complexed web problems using HTML,
+                CSS and Javascript. Thorough, precise and appreciative of clean code. Passion for technology and mobile
+                web applications as well as user experience. Eager to learn and enjoys working in team-based
+                environments. </p>
+            <button class="about__info-section--button btn mb-lg">
+                <a href="#">Download CV</a>
+            </button>
+            
 
 
-                </div>
-                <div class="skills-wrapper-right">
+            <div class="about__info-section--social">
 
-                    <div class="skill">
-                        <div class="skill-heading">
-                            <h3>Node.js</h4>
-                                <p>70%</p>
-                        </div>
-                        <div class="full-skill-bar">
-                            <span style="width: 70%;"></span>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill-heading">
-                            <h3>Express.js</h4>
-                                <p>70%</p>
-                        </div>
-                        <div class="full-skill-bar">
-                            <span style="width: 70%;"></span>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill-heading">
-                            <h3>SQL</h4>
-                                <p>60%</p>
-                        </div>
-                        <div class="full-skill-bar">
-                            <span style="width: 60%;"></span>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill-heading">
-                            <h3>MongoDB</h4>
-                                <p>60%</p>
-                        </div>
-                        <div class="full-skill-bar">
-                            <span style="width: 60%;"></span>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill-heading">
-                            <h3>Git / Github</h4>
-                                <p>70%</p>
-                        </div>
-                        <div class="full-skill-bar">
-                            <span style="width: 70%;"></span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div id="projects" class="projects section-wrapper">
-            <div class="section-heading">
-                <h1> Recent Projects</h1>
-            </div>
-            <div class="all-projects-wrapper">
-                <div class="project">
-                    <div class="title">
-                        <h2>Forkify</h2>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="photos/Forkify.jpg" alt="">
-                    </div>
-
-                    <div class="description-links-wrapper">
-                        <div class="description">
-                            <p>A recipe web app which allows you to search for recipes, adjust serving sizes, create and
-                                edit a shopping list according to serving size.</p>
-                        </div>
+                <a href="https://www.linkedin.com/in/keitha-noel-louis-18aa78151/" class="about__info-section--social-wrapper">
+                    <svg class="about__info-section--social-icon">
+                        <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
 
 
-                        <div class="links">
-                            <a class="button-link github" href="https://github.com/knoellouis/Forkify-App">
-                                <i class="fab fa-github"></i>
-                                View Code
-                            </a>
-                            <a class="button-link demo" href="https://forkify-recipe-app.netlify.app">
-                                View Demo
-                            </a>
-                        </div>
-                    </div>
+                <a href="https://www.xing.com/profile/Keitha_NoelLouis/cv" class="about__info-section--social-wrapper">
+                    <svg class="about__info-section--social-icon">
+                        <use xlink:href="img/sprite.svg#icon-xing"></use>
+                    </svg>
+                </a>
 
 
-                </div>
-                <div class="project">
-                    <div class="title">
-                        <h2>Budget App</h2>
-                    </div>
-                    <div class="img-description-wrapper">
-                        <div class="img-wrapper">
-                            <img src="photos/Budgety App.jpg" alt="">
-                        </div>
-                        <div class="description-links-wrapper">
-                            <div class="description">
-                                <p>A budget app which allows you to add or remove income and expenses with descriptions
-                                    and
-                                    provides overall and individual percentages for expenses. </p>
-                            </div>
-                            <div class="links">
-                                <a class="button-link" href="https://github.com/knoellouis/Budget-App">
-                                    <i class="fab fa-github"></i>
-                                    View Code
-                                </a>
-                                <a class="button-link demo" href="https://budgety-budget-app.netlify.app">
-                                    View Demo
-                                </a>
-                            </div>
-                        </div>
+                <a href="https://github.com/knoellouis" class="about__info-section--social-wrapper">
+                    <svg class="about__info-section--social-icon">
+                        <use xlink:href="img/sprite.svg#icon-logo"></use>
+                    </svg>
+                </a>
 
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="title">
-                        <h2>Patatap Clone</h2>
-                    </div>
-                    <div class="img-description-wrapper">
-                        <div class="img-wrapper">
-                            <img src="photos/Patatap Clone.jpg" alt="">
-                        </div>
-                        <div class="description-links-wrapper">
-                            <div class="description">
-                                <p>A fun project which creates a sound and a corresponding circle color when you when you
-                                    press
-                                    certain keys on your key board.</p>
-                            </div>
-                            
-
-                            <div class="links">
-                                <a class="button-link" href="https://github.com/knoellouis/Patatap-Clone">
-                                    <i class="fab fa-github"></i>
-                                    View Code
-                                </a>
-                                <a class="button-link demo" href="pata-tap-clone-app.netlify.app">
-                                    View Demo
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
             </div>
 
         </div>
 
-        <div id="contact" class="contact section-wrapper">
-            <div class="section-heading">
-                <h1>Get in touch</h1>
+
+        <div class="about__info-personal">
+
+            <div class="about__info-personal--info mb-sm">
+                <h3 class="heading-3">Name:</h3>
+                <p>Keitha Noel-Louis</p>
             </div>
+            <div class="about__info-personal--info mb-sm">
+                <h3 class="heading-3">Email:</h3>
+                <p>knoellouis@gmail.com</p>
+            </div>
+            <div class="about__info-personal--info mb-sm">
+                <h3 class="heading-3">Location:</h3>
+                <p>Hamburg, DE</p>
+            </div>
+            <div class="about__info-personal--info">
+                <h3 class="heading-3 ">Date of Birth:</h3>
+                <p>December 25, 1990</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="contact-wrapper">
-                <div class="my-contact-info">
-                    <div class="contact-info-wrapper">
-                        <i class="fas fa-phone"></i>
-                        <div class="contact-info">
+    <section id="skills" class="skills">
 
-                            <h3>Phone</h3>
-                            <p>+49 0175 629 6889</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-wrapper">
-                        <i class="fas fa-envelope"></i>
-                        <div class="contact-info">
+        <h2 class="skills__heading heading-2 mb-md">Skills</h2>
 
-                            <h3>Email</h3>
-                            <p>knoellouis@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-wrapper">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="contact-info">
-
-                            <h3>Location</h3>
-                            <p>Gertrud-Meyer-Straße 1C <br>22335, Hamburg</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" action="https://formspree.io/mrgyrkzd" method="POST">
-                    <input class="contact-form-element" type="text" name="_replyto" placeholder="Email" required>
-                    <input class="contact-form-element" type="text" placeholder="Subject">
-                    <textarea class="" name="message" cols="30" rows="10" placeholder="Your message"
-                        required></textarea>
-                    <button class="" type="submit">Send Message </button>
-                </form>
+        <div class="skills__skill">
+            <div class="skills__skill-hp">
+                <h3 class="skills__skill-hp-heading">HTML</h3>
+                <p class="skills__skill-hp-percent">80%</p>
+            </div>
+            <div class="skills__skill--full-bar">
+                <span class="skills__skill-bar" style="width: 80%;"></span>
             </div>
         </div>
 
-        <div class="scroll-to-top">
+        <div class="skills__skill">
+            <div class="skills__skill-hp">
+                <h3 class="skills__skill-hp-heading">CSS / Sass</h3>
+                <p class="skills__skill-hp-percent">80%</p>
+            </div>
+            <div class="skills__skill--full-bar">
+                <span class="skills__skill-bar" style="width: 80%;"></span>
+            </div>
+        </div>
+
+        <div class="skills__skill">
+            <div class="skills__skill-hp">
+                <h3 class="skills__skill-hp-heading">Bootstrap</h3>
+                <p class="skills__skill-hp-percent">85%</p>
+            </div>
+            <div class="skills__skill--full-bar">
+                <span class="skills__skill-bar" style="width: 85%;"></span>
+            </div>
+        </div>
+
+        <div class="skills__skill">
+            <div class="skills__skill-hp">
+                <h3 class="skills__skill-hp-heading">Javascript (ES5 & ES6) </h3>
+                <p class="skills__skill-hp-percent">70%</p>
+            </div>
+            <div class="skills__skill--full-bar">
+                <span class="skills__skill-bar" style="width: 70%;"></span>
+            </div>
+        </div>
+
+        <div class="skills__skill">
+            <div class="skills__skill-hp">
+                <h3 class="skills__skill-hp-heading">jQuery</h3>
+                <p class="skills__skill-hp-percent">70%</p>
+            </div>
+            <div class="skills__skill--full-bar">
+                <span class="skills__skill-bar" style="width: 70%;"></span>
+            </div>
+        </div>
+
+        <div class="skills__skill">
+            <div class="skills__skill-hp">
+                <h3 class="skills__skill-hp-heading">Node.js</h3>
+                <p class="skills__skill-hp-percent">70%</p>
+            </div>
+            <div class="skills__skill--full-bar">
+                <span class="skills__skill-bar" style="width: 70%;"></span>
+            </div>
+        </div>
+
+        <div class="skills__skill">
+            <div class="skills__skill-hp">
+                <h3 class="skills__skill-hp-heading">Express.js</h3>
+                <p class="skills__skill-hp-percent">70%</p>
+            </div>
+            <div class="skills__skill--full-bar">
+                <span class="skills__skill-bar" style="width: 70%;"></span>
+            </div>
+        </div>
+
+        <div class="skills__skill">
+            <div class="skills__skill-hp">
+                <h3 class="skills__skill-hp-heading">SQL</h3>
+                <p class="skills__skill-hp-percent">60%</p>
+            </div>
+            <div class="skills__skill--full-bar">
+                <span class="skills__skill-bar" style="width: 60%;"></span>
+            </div>
+        </div>
+
+        <div class="skills__skill">
+            <div class="skills__skill-hp">
+                <h3 class="skills__skill-hp-heading">MongoDB</h3>
+                <p class="skills__skill-hp-percent">60%</p>
+            </div>
+            <div class="skills__skill--full-bar">
+                <span class="skills__skill-bar" style="width: 60%;"></span>
+            </div>
+        </div>
+
+        <div class="skills__skill">
+            <div class="skills__skill-hp">
+                <h3 class="skills__skill-hp-heading">Git / Github</h3>
+                <p class="skills__skill-hp-percent">80%</p>
+            </div>
+            <div class="skills__skill--full-bar">
+                <span class="skills__skill-bar" style="width: 80%;"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+
+        <h2 class="projects__heading heading-2 mb-lg"> Recent Projects</h2>
+
+        <div class="projects__project--1">
+            <h3 class="projects__project-title heading-3 mb-sm">Forkify</h3>
+            <img class="projects__project-img mb-sm" src="img/Forkify.jpg" alt="">
+            <p class="projects__project-description mb-md">A recipe web app which allows you to search for recipes,
+                adjust
+                serving sizes, create and edit a shopping list according to serving size.</p>
+            <div class="projects__project-links">
+                <button class="button btn">
+                    <a class="projects__project-links-1 github" href="https://github.com/knoellouis/Forkify-App">
+                        View Code
+                    </a>
+                </button>
+                <button class="button btn">
+                    <a class="projects__project-links-2 demo" href="https://forkify-recipe-app.netlify.app">
+                        View Demo
+                    </a>
+                </button>
+
+            </div>
+
+        </div>
+        <div class="projects__project--2">
+            <h3 class="projects__project-title heading-3 mb-sm">Budget App</h3>
+            <img class="projects__project-img mb-sm" src="img/Budgety App.jpg" alt="">
+            <p class="projects__project-description mb-md">An app where income and expenses with descriptions can be
+                added or removed and provide expense percentages. </p>
+
+            <div class="projects__project-links">
+                <button class="button btn">
+                    <a class="projects__project-links-1 github" href="https://github.com/knoellouis/Forkify-App">
+                        View Code
+                    </a>
+                </button>
+                <button class="button btn">
+                    <a class="projects__project-links-2 demo" href="https://forkify-recipe-app.netlify.app">
+                        View Demo
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="projects__project--3">
+            <h3 class="projects__project-title heading-3 mb-sm">Patatap Clone</h3>
+            <img class="projects__project-img mb-sm" src="img/Patatap Clone.jpg" alt="">
+            <p class="projects__project-description mb-md">A fun project which creates a sound and a corresponding
+                colorful circle whenever you when you press a certain key on your key board.</p>
+
+            <div class="projects__project-links">
+                <button class="button btn">
+                    <a class="projects__project-links-1" href="https://github.com/knoellouis/Patatap-Clone">
+                        View Code
+                    </a>
+                </button>
+                <button class="button btn">
+                    <a class="projects__project-links-2" href="pata-tap-clone-app.netlify.app">
+                        View Demo
+                    </a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+
+        <h2 class="contact__heading heading-2 mb-lg">Get in touch</h2>
+
+
+        <div class="contact__info">
+            <div class="contact__info-data--phone">
+                <svg class="contact__info-data--icon">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
+                <h3>Phone</h3>
+                <p>+49 0175 629 6889</p>
+            </div>
+
+            <div class="contact__info-data--email">
+                <svg class="contact__info-data--icon">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+                <h3>Email</h3>
+                <p>knoellouis@gmail.com</p>
+            </div>
+
+            <div class="contact__info-data--address">
+                <svg class="contact__info-data--icon">
+                    <use xlink:href="img/sprite.svg#icon-gps"></use>
+                </svg>
+                <h3>Location</h3>
+                <p>Gertrud-Meyer-Straße 1C <br>22335, Hamburg</p>
+            </div>
+
+        </div>
+
+        <form class="contact__form" action="https://formspree.io/mrgyrkzd" method="POST">
+            <input class="contact__form-element mb-sm" type="text" name="_replyto" placeholder="Email" required>
+            <input class="contact__form-element mb-sm" type="text" placeholder="Subject">
+            <textarea class="contact__form-message mb-lg" name="message" cols="30" rows="10" placeholder="Your message"
+                required></textarea>
+            <button class="contact__form-btn btn" type="submit">Send Message </button>
+        </form>
+
+
+    </section>
+
+
+
+    <footer class="footer">
+
+        <button class="footer__scroll-to-top mb-sm">
             <a href="#intro" class="scrollTo"><i class="fas fa-arrow-up"></i></a>
             <p>back to top</p>
-        </div>
+        </button>
 
-    </div> -->
+        <p class="footer__credit"> Icons made by <a href="https://www.flaticon.com/authors/prettycons"
+                title="prettycons"> prettycons </a> from <a href="https://www.flaticon.com/" title="Flaticon">
+                www.flaticon.com</a></p>
 
-
-
+    </footer>
 
     <script src="app.js"></script>
 </body>
