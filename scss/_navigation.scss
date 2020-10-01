@@ -24,6 +24,11 @@
           height: 2.75rem;
           fill: $color-primary-dark;
 
+          @media only screen and (max-width: $bp-miniscul) {
+            width: 2.3rem;
+            height: 2.3rem;
+          }
+
           &:active,
           &:hover {
             fill: $color-secondary;

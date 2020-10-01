@@ -22,10 +22,14 @@
 
 .heading-3 {
     @extend %heading;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 500;
     color: $color-white;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-miniscul) {
+        font-size: 1.7rem;
+      }
 }
 
 .heading-4 {
@@ -49,6 +53,13 @@
     &:hover {
         background-color: $color-primary-dark;
     }
+    @media only screen and (max-width: $bp-medium) {
+        width: 60%;
+      }
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 50%;
+      }
 
 
 }

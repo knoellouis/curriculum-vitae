@@ -20,10 +20,11 @@ $font-primary: 'Lato', sans-serif;;
 
 // RESPONSIVE BREAKPOINTS
 $bg-collosal: 100em;  // 1600px
-$bp-largest: 75em;   // 1200px
-$bp-large: 62.5em;   // 1000px
-$bp-medium: 50em;    // 800px;
-$bp-small: 37.5em;    // 600px;
+$bg-large: 87.5em;  //1400px
+$bp-medium: 75em;   // 1200px
+$bp-small: 62.5em;   // 1000px
+$bp-smallest: 50em;    // 800px;
+$bp-miniscul: 37.5em;    // 600px;
 
 *,
 *::before,
@@ -37,12 +38,24 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (min-width: $bg-collosal) {
+        font-size: 80%;
+      }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 55%;
+      }
+
+    @media only screen and (max-width: $bp-small) {
         font-size: 50%;
       }
 
-    @media only screen and (min-width: $bg-collosal) {
-        font-size: 80%;
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 45%;
+      }
+
+      @media only screen and (max-width: $bp-miniscul) {
+        font-size: 40%;
       }
 }
 
