@@ -767,7 +767,7 @@ body {
     border-bottom: 2px solid #f8b24f; }
     @media only screen and (max-width: 50em) {
       .skills__heading {
-        grid-columns: 1 / -1;
+        grid-column: 1 / -1;
         padding-bottom: 0; } }
   .skills__skill-1 {
     grid-row: 2 / 3;
