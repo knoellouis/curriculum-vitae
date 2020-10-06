@@ -6,9 +6,15 @@
 .heading-1 {
     @extend %heading;
     font-size: 5.5rem;
-    color: $color-white;
     line-height: 1;
     font-weight: 700;
+
+    @media only screen and (max-width: $bp-xsmall) {
+        font-size: 4rem;
+      }
+    @media only screen and (max-width: $bp-xxsmall) {
+        font-size: 3rem;
+      }
 }
 
 .heading-2 {
@@ -18,50 +24,78 @@
     line-height: 1;
     padding-bottom: 1.5rem;
     font-weight: 500;
+
+    @media only screen and (max-width: $bp-xsmall) {
+        font-size: 3rem;
+        text-transform: uppercase;
+      }
+    @media only screen and (max-width: $bp-xxsmall) {
+        font-size: 2rem;
+      }
 }
 
 .heading-3 {
     @extend %heading;
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: $color-white;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-transform: uppercase;
+    
 
-    @media only screen and (max-width: $bp-miniscul) {
-        font-size: 1.7rem;
+    @media only screen and (max-width: $bp-xsmall) {
+        font-size: 1.4rem;
+      }
+    @media only screen and (max-width: $bp-xxsmall) {
+        font-size: 1.2rem;
       }
 }
 
-.heading-4 {
-    @extend %heading;
-    font-size: 1.2rem;
-}
 
 .btn {
-    background-color: $color-white-fade;
+    background-color: $color-primary;
     color: $color-white;
-    border: none;
+    border: 1px solid white;
     font-family: $font-primary;
-    font-size: 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 3rem 5rem;
+    padding: 2rem 4rem;
     cursor: pointer;
     transition: all .2s;
     line-height: 0;
+    
+    a, &:visited {
+      text-decoration: none;
+      color: $color-white;
+    }
 
     &:hover {
-        background-color: $color-primary-dark;
+        background-color: $color-secondary;
+        border: 1px solid transparent;
     }
-    @media only screen and (max-width: $bp-medium) {
-        width: 60%;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.2rem;
+        padding: 0;
+        border: none;
+
+        &:hover {
+            background-color: none;
+            border: none;
+        }
       }
 
-    @media only screen and (max-width: $bp-smallest) {
-        width: 50%;
-      }
+      @media only screen and (max-width: $bp-xsmall) {
+        color: $color-secondary;
 
-
+        a, &:visited {
+            text-decoration: none;
+            color: $color-secondary;
+          }
+      
+          &:hover {
+              background-color: $color-white;
+              border: none;
+          }
+    }
 }
 
 .mb-sm { margin-bottom: 2rem; }

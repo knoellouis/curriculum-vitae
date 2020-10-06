@@ -1,22 +1,25 @@
 .projects {
   grid-row: 4 / 5;
-  grid-column: 2 / 12;
-  display: grid;
-  grid-template-rows: max-content 1fr max-content;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5rem;
+  grid-column: 2 / 7;
   background-color: $color-primary;
   padding: 7rem;
-  // border-radius: 5rem;
   color: $color-white;
+  font-size: 1.4rem;
+  display: grid;
+  grid-template-rows: min-content max-content;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
 
-  @media only screen and (max-width: $bp-small) {
-    grid-column: 1 / 13;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 9rem;
+    grid-column: 1 / 8;
   }
 
-  @media only screen and (max-width: $bp-miniscul) {
-    display: flex;
-    flex-direction: column;
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+  }
+  @media only screen and (max-width: $bp-xsmall) {
+    padding: 5rem;
   }
 
   &__heading {
@@ -25,88 +28,182 @@
     border-bottom: 2px solid $color-secondary;
   }
 
-  &__project {
-    display: grid;
-    grid-template-rows: repeat(4, min-content);
-    grid-template-columns: 1fr;
+  .project {
     grid-row: 2 / 3;
-    padding: 2rem;
-    text-align: center;
+    grid-column: 1 / -1;
 
-    @media only screen and (max-width: $bp-miniscul) {
-      display: flex;
-      flex-direction: column;
-      border-bottom: 2px solid $color-white;
-      justify-content: center;
-      align-items: center;
+    @media only screen and (max-width: $bp-small) {
+      grid-gap: 2rem;
     }
 
-    &-title {
+    &__1 {
+      display: grid;
+      grid-template-rows:
+        min-content minmax(20rem 1fr)
+        1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
+
+      @media only screen and (max-width: $bp-small) {
+        grid-template-rows: repeat(
+          4,
+          min-content
+        );
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+        border: 2px solid $color-white-fade;
+        padding: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-xsmall) {
+        grid-template-rows: repeat(
+          4,
+          min-content
+        );
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: .5rem;
+        border: 2px solid $color-white-fade;
+        padding: 1rem;
+      }
+    }
+    &__2 {
+      display: grid;
+      grid-template-rows:
+        min-content minmax(20rem 1fr)
+        1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
+
+      @media only screen and (max-width: $bp-small) {
+        grid-template-rows: repeat(
+          4,
+          min-content
+        );
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+        border: 2px solid $color-white-fade;
+        padding: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-xsmall) {
+        grid-template-rows: repeat(
+          4,
+          min-content
+        );
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: .5rem;
+        border: 2px solid $color-white-fade;
+        padding: 1rem;
+      }
+    }
+    &__3 {
+      display: grid;
+      grid-template-rows:
+        min-content minmax(20rem 1fr)
+        1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
+
+      @media only screen and (max-width: $bp-small) {
+        grid-template-rows: repeat(
+          4,
+          min-content
+        );
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+        border: 2px solid $color-white-fade;
+        padding: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-xsmall) {
+        grid-template-rows: repeat(
+          4,
+          min-content
+        );
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: .5rem;
+        border: 2px solid $color-white-fade;
+        padding: 1rem;
+      }
+    }
+
+    &__title {
       grid-row: 1 / 2;
-      text-transform: uppercase;
-      margin-left: 1rem;
+      grid-column: 1 / -1;
+
+      @media only screen and (max-width: $bp-small) {
+        grid-row: 1 / 2;
+        grid-column: 1 / 5;
+      }
+
+      @media only screen and (max-width: $bp-xsmall) {
+        grid-row: 1 / 2;
+        grid-column: 1 / 5;
+      }
     }
 
-    &-img {
+    &__img {
       grid-row: 2 / 3;
+      grid-column: 1 / -1;
       width: 100%;
-      height: 20rem;
-      border-radius: 2rem;
 
-      @media only screen and (max-width: $bp-miniscul) {
-        width: 70%;
-        margin-left: 8rem;
+      @media only screen and (max-width: $bp-small) {
+        grid-row: 2 / 4;
+        grid-column: 1 / 3;
+      }
+
+      @media only screen and (max-width: $bp-xsmall) {
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
       }
     }
 
-    &-description {
+    &__description {
       grid-row: 3 / 4;
-      font-size: 1.3rem;
-      text-align: center;
-      height: 7rem;
+      grid-column: 1 / -1;
+      // max-height: 12rem;
+      // min-height: 8rem;
 
-      @media only screen and (max-width: $bp-miniscul) {
-        width: 70%;
-        margin-left: 8rem;
+      @media only screen and (max-width: $bp-small) {
+        grid-row: 2 / 3;
+        grid-column: 3 / 5;
+      }
+
+      @media only screen and (max-width: $bp-xsmall) {
+        grid-row: 3 / 4;
+        grid-column: 1 / 5;
       }
     }
 
-    &-links {
+    &__buttons {
       grid-row: 4 / 5;
-      text-decoration: none;
+      grid-column: 1 / -1;
       display: flex;
       flex-direction: column;
-      width: 100%;
       justify-content: center;
       align-items: center;
+      font-size: 1.2rem;
+      width: 100%;
+
+      @media only screen and (max-width: $bp-small) {
+        grid-row: 3 / 4;
+        grid-column: 3 / 5;
+        font-size: 0.5rem;
+      }
+
+      @media only screen and (max-width: $bp-xsmall) {
+        width: 100%;
+        font-size: 1rem;
+        grid-row: 4 / 5;
+        grid-column: 1 / 5;
+        margin-top: 1.5rem;
+      }
 
       &-1,
       &-2 {
-        width: 50%;
-        text-align: center;
-        justify-content: center;
-        border-radius: 2rem;
-      }
+        margin: 1rem;
+        width: 100%;
 
-      a,
-      a:visited {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        font-weight: 400;
-        color: $color-white;
-        height: 2rem;
-      }
-
-      .button {
-        width: 70%;
-
-        &:not(lastchild) {
-          margin-bottom: 1.5rem;
-        }
-
-        @media only screen and (max-width: $bp-miniscul) {
-          width: 40%;
+        @media only screen and (max-width: $bp-xsmall) {
+          margin-top: 2rem;
+          text-decoration: underline;
         }
       }
     }

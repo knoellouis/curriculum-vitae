@@ -59,79 +59,72 @@
         </ul>
     </nav>
 
-    <section class="intro" id="intro">
+    <header class="intro" id="intro">
         <img class="intro__img" src="img/IMG_6468 small.JPG" alt="">
-        <div class="intro__greeting">
-            <div class="intro__greeting-heading">
-                <h1 class="intro__greeting-heading--heading heading-1 mb-md">Hello<span
-                        class="intro__greeting-exclamation">!</span> <br> I'm Keitha<span
-                        class="intro__greeting-period">.</span></h1>
-            </div>
-            <div class="intro__greeting-para">
-                <p>Frontend Web Developer <br>With a passion for modern and responsive web apps!</p>
-            </div>
-        </div>
-    </section>
+
+        <h1 class="intro__hello heading-1">Hello<span class="intro__exclamation">!</span>
+        </h1>
+        <h1 class="intro__name heading-1">I'm Keitha<span class="intro__period">.</span>
+        </h1>
+
+        <p class="intro__jobtitle">Frontend Web Developer</p>
+        <p class="intro__description">With a passion for modern and responsive web apps!</p>
+    </header>
 
     <section id="about" class="about">
-
         <h2 class="about__heading heading-2 mb-lg">About Me</h2>
-        <div class="about__info-section">
-            <p class="about__info-section--description mb-md"> Ambitious Junior Frontend Developer with excellent
-                problem solving
-                skills. Experience creating both logical and innovative solutions to complexed web problems using HTML,
-                CSS and Javascript. Thorough, precise and appreciative of clean code. Passion for technology and mobile
-                web applications as well as user experience. Eager to learn and enjoys working in team-based
-                environments. </p>
-            <button class="about__info-section--button btn mb-lg">
-                <a href="https://drive.google.com/file/d/1b33j3EUekK42hY-m7MQzITjDaG2HpeIS/view?usp=sharing">Download CV</a>
-            </button>
-            
 
+        <p class="about__info-description mb-md"> Ambitious Junior Frontend Developer with excellent
+            problem solving
+            skills. Experience creating both logical and innovative solutions to complexed web problems using HTML,
+            CSS and Javascript. Thorough, precise and appreciative of clean code. Passion for technology and mobile
+            web applications as well as user experience. Eager to learn and enjoys working in team-based
+            environments. </p>
 
-            <div class="about__info-section--social">
+        <button class="about__info-button btn mb-lg">
+            <a href="https://drive.google.com/file/d/1b33j3EUekK42hY-m7MQzITjDaG2HpeIS/view?usp=sharing">Download
+                CV</a>
+        </button>
 
-                <a href="https://www.linkedin.com/in/keitha-noel-louis-18aa78151/" class="about__info-section--social-wrapper">
-                    <svg class="about__info-section--social-icon">
-                        <use xlink:href="img/sprite.svg#icon-linkedin"></use>
-                    </svg>
-                </a>
+        <div class="about__info-social">
+            <a href="https://www.linkedin.com/in/keitha-noel-louis-18aa78151/" class="about__info-social--link">
+                <svg class="about__info-social--icon">
+                    <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                </svg>
+            </a>
 
+            <a href="https://www.xing.com/profile/Keitha_NoelLouis/cv" class="about__info-social--link">
+                <svg class="about__info-social--icon">
+                    <use xlink:href="img/sprite.svg#icon-xing"></use>
+                </svg>
+            </a>
 
-                <a href="https://www.xing.com/profile/Keitha_NoelLouis/cv" class="about__info-section--social-wrapper">
-                    <svg class="about__info-section--social-icon">
-                        <use xlink:href="img/sprite.svg#icon-xing"></use>
-                    </svg>
-                </a>
-
-
-                <a href="https://github.com/knoellouis" class="about__info-section--social-wrapper">
-                    <svg class="about__info-section--social-icon">
-                        <use xlink:href="img/sprite.svg#icon-logo"></use>
-                    </svg>
-                </a>
-
-            </div>
-
+            <a href="https://github.com/knoellouis" class="about__info-social--link">
+                <svg class="about__info-social--icon">
+                    <use xlink:href="img/sprite.svg#icon-logo"></use>
+                </svg>
+            </a>
         </div>
 
-
         <div class="about__info-personal">
-
-            <div class="about__info-personal--info">
+            <div class="about__info-personal--name mb-md">
                 <h3 class="heading-3">Name:</h3>
                 <p>Keitha Noel-Louis</p>
             </div>
-            <div class="about__info-personal--info">
+            <div class="about__info-personal--email mb-md">
                 <h3 class="heading-3">Email:</h3>
                 <p>knoellouis@gmail.com</p>
             </div>
-            <div class="about__info-personal--info">
+
+
+            <div class="about__info-personal--location mb-md">
                 <h3 class="heading-3">Location:</h3>
                 <p>Hamburg, DE</p>
             </div>
-            <div class="about__info-personal--info">
-                <h3 class="heading-3 ">Birthday:</h3>
+
+
+            <div class="about__info-personal--bday">
+                <h3 class="heading-3">Birthday:</h3>
                 <p>December 25, 1990</p>
             </div>
         </div>
@@ -141,103 +134,84 @@
 
         <h2 class="skills__heading heading-2 mb-md">Skills</h2>
 
-        <div class="skills__skill">
-            <div class="skills__skill-hp">
-                <h3 class="skills__skill-hp-heading">HTML</h3>
-                <p class="skills__skill-hp-percent">80%</p>
-            </div>
-            <div class="skills__skill--full-bar">
-                <span class="skills__skill-bar" style="width: 80%;"></span>
+
+        <div class="skills__skill-1">
+            <h3 class="skills__skill-1--heading">HTML <span class="skills__skill-1--percent">80%</span></h3>
+            <div class="skills__skill-1--fullbar">
+                <span class="skills__skill-1--progbar" style="width: 80%;"></span>
             </div>
         </div>
 
-        <div class="skills__skill">
-            <div class="skills__skill-hp">
-                <h3 class="skills__skill-hp-heading">CSS / Sass</h3>
-                <p class="skills__skill-hp-percent">80%</p>
-            </div>
-            <div class="skills__skill--full-bar">
-                <span class="skills__skill-bar" style="width: 80%;"></span>
+        <div class="skills__skill-2">
+            <h3 class="skills__skill-2--heading">CSS / Sass<span class="skills__skill-2--percent">80%</span></h3>
+
+            <div class="skills__skill-2--fullbar">
+                <span class="skills__skill-2--progbar" style="width: 80%;"></span>
             </div>
         </div>
 
-        <div class="skills__skill">
-            <div class="skills__skill-hp">
-                <h3 class="skills__skill-hp-heading">Bootstrap</h3>
-                <p class="skills__skill-hp-percent">85%</p>
-            </div>
-            <div class="skills__skill--full-bar">
-                <span class="skills__skill-bar" style="width: 85%;"></span>
+        <div class="skills__skill-3">
+            <h3 class="skills__skill-3--heading">Bootstrap<span class="skills__skill-3--percent">85%</span></h3>
+
+            <div class="skills__skill-3--fullbar">
+                <span class="skills__skill-3--progbar" style="width: 85%;"></span>
             </div>
         </div>
 
-        <div class="skills__skill">
-            <div class="skills__skill-hp">
-                <h3 class="skills__skill-hp-heading">Javascript (ES5 & ES6) </h3>
-                <p class="skills__skill-hp-percent">70%</p>
-            </div>
-            <div class="skills__skill--full-bar">
-                <span class="skills__skill-bar" style="width: 70%;"></span>
+        <div class="skills__skill-4">
+            <h3 class="skills__skill-4--heading">Javascript (ES5 & ES6)<span class="skills__skill-4--percent">70%</span>
+            </h3>
+
+            <div class="skills__skill-4--fullbar">
+                <span class="skills__skill-4--progbar" style="width: 70%;"></span>
             </div>
         </div>
 
-        <div class="skills__skill">
-            <div class="skills__skill-hp">
-                <h3 class="skills__skill-hp-heading">jQuery</h3>
-                <p class="skills__skill-hp-percent">70%</p>
-            </div>
-            <div class="skills__skill--full-bar">
-                <span class="skills__skill-bar" style="width: 70%;"></span>
+        <div class="skills__skill-5">
+            <h3 class="skills__skill-5--heading">jQuery<span class="skills__skill-5--percent">70%</span></h3>
+
+            <div class="skills__skill-5--fullbar">
+                <span class="skills__skill-5--progbar" style="width: 70%;"></span>
             </div>
         </div>
 
-        <div class="skills__skill">
-            <div class="skills__skill-hp">
-                <h3 class="skills__skill-hp-heading">Node.js</h3>
-                <p class="skills__skill-hp-percent">70%</p>
-            </div>
-            <div class="skills__skill--full-bar">
-                <span class="skills__skill-bar" style="width: 70%;"></span>
+        <div class="skills__skill-6">
+            <h3 class="skills__skill-6--heading">Node.js<span class="skills__skill-6--percent">70%</span></h3>
+
+            <div class="skills__skill-6--fullbar">
+                <span class="skills__skill-6--progbar" style="width: 70%;"></span>
             </div>
         </div>
 
-        <div class="skills__skill">
-            <div class="skills__skill-hp">
-                <h3 class="skills__skill-hp-heading">Express.js</h3>
-                <p class="skills__skill-hp-percent">70%</p>
-            </div>
-            <div class="skills__skill--full-bar">
-                <span class="skills__skill-bar" style="width: 70%;"></span>
+        <div class="skills__skill-7">
+            <h3 class="skills__skill-7--heading">Express.js<span class="skills__skill-7--percent">70%</span></h3>
+
+            <div class="skills__skill-7--fullbar">
+                <span class="skills__skill-7--progbar" style="width: 70%;"></span>
             </div>
         </div>
 
-        <div class="skills__skill">
-            <div class="skills__skill-hp">
-                <h3 class="skills__skill-hp-heading">SQL</h3>
-                <p class="skills__skill-hp-percent">60%</p>
-            </div>
-            <div class="skills__skill--full-bar">
-                <span class="skills__skill-bar" style="width: 60%;"></span>
+        <div class="skills__skill-8">
+            <h3 class="skills__skill-8--heading">SQL<span class="skills__skill-8--percent">60%</span></h3>
+
+            <div class="skills__skill-8--fullbar">
+                <span class="skills__skill-8--progbar" style="width: 60%;"></span>
             </div>
         </div>
 
-        <div class="skills__skill">
-            <div class="skills__skill-hp">
-                <h3 class="skills__skill-hp-heading">MongoDB</h3>
-                <p class="skills__skill-hp-percent">60%</p>
-            </div>
-            <div class="skills__skill--full-bar">
-                <span class="skills__skill-bar" style="width: 60%;"></span>
+        <div class="skills__skill-9">
+            <h3 class="skills__skill-9--heading">MongoDB<span class="skills__skill-9--percent">60%</span></h3>
+
+            <div class="skills__skill-9--fullbar">
+                <span class="skills__skill-9--progbar" style="width: 60%;"></span>
             </div>
         </div>
 
-        <div class="skills__skill">
-            <div class="skills__skill-hp">
-                <h3 class="skills__skill-hp-heading">Git / Github</h3>
-                <p class="skills__skill-hp-percent">80%</p>
-            </div>
-            <div class="skills__skill--full-bar">
-                <span class="skills__skill-bar" style="width: 80%;"></span>
+        <div class="skills__skill-10">
+            <h3 class="skills__skill-10--heading">Git / Github<span class="skills__skill-10--percent">80%</span></h3>
+
+            <div class="skills__skill-10--fullbar">
+                <span class="skills__skill-10--progbar" style="width: 80%;"></span>
             </div>
         </div>
     </section>
@@ -246,63 +220,66 @@
 
         <h2 class="projects__heading heading-2 mb-lg"> Recent Projects</h2>
 
-        <div class="projects__project--1">
-            <h3 class="projects__project-title heading-3 mb-sm">Forkify</h3>
-            <img class="projects__project-img mb-sm" src="img/Forkify.jpg" alt="">
-            <p class="projects__project-description mb-md">A recipe web app which allows you to search for recipes,
-                adjust
-                serving sizes, create and edit a shopping list according to serving size.</p>
-            <div class="projects__project-links">
-                <button class="button btn">
-                    <a class="projects__project-links-1 github" href="https://github.com/knoellouis/Forkify-App">
+        <div class="project__1">
+            <h3 class="project__title heading-3 mb-sm">Forkify</h3>
+            <img class="project__img mb-sm" src="img/Forkify.jpg" alt="">
+            <p class="project__description">A recipe web app which allows you to search for recipes,
+                adjust serving sizes, create and edit a shopping list according to serving size.</p>
+
+            <div class="project__buttons">
+                <button class="project__buttons-1 btn">
+                    <a href="https://github.com/knoellouis/Forkify-App">
                         View Code
                     </a>
                 </button>
-                <button class="button btn">
-                    <a class="projects__project-links-2 demo" href="https://forkify-recipe-app.netlify.app">
+                <button class="project__buttons-2 btn">
+                    <a href="https://forkify-recipe-app.netlify.app">
                         View Demo
                     </a>
                 </button>
-
             </div>
 
         </div>
-        <div class="projects__project--2">
-            <h3 class="projects__project-title heading-3 mb-sm">Budget App</h3>
-            <img class="projects__project-img mb-sm" src="img/Budgety App.jpg" alt="">
-            <p class="projects__project-description mb-md">An app where income and expenses with descriptions can be
+
+        <div class="project__2">
+            <h3 class="project__title heading-3 mb-sm">Budget App</h3>
+            <img class="project__img mb-sm" src="img/budgety.jpg" alt="">
+            <p class="project__description">An app where income and expenses with descriptions can be
                 added or removed and provide expense percentages. </p>
 
-            <div class="projects__project-links">
-                <button class="button btn">
-                    <a class="projects__project-links-1 github" href="https://github.com/knoellouis/Forkify-App">
+            <div class="project__buttons">
+                <button class="project__buttons-1 btn">
+                    <a href="https://github.com/knoellouis/Budget-App">
                         View Code
                     </a>
                 </button>
-                <button class="button btn">
-                    <a class="projects__project-links-2 demo" href="https://forkify-recipe-app.netlify.app">
+                <button class="project__buttons-2 btn">
+                    <a href="https://budgety-budget-app.netlify.app/">
                         View Demo
                     </a>
                 </button>
             </div>
-        </div>
-        <div class="projects__project--3">
-            <h3 class="projects__project-title heading-3 mb-sm">Trillo</h3>
-            <img class="projects__project-img mb-sm" src="img/Trillo.jpg" alt="">
-            <p class="projects__project-description mb-md">A modern style booking web app designed to help users find make and save bookings for hotels, flights, car rentals and tours. </p>
 
-            <div class="projects__project-links">
-                <button class="button btn">
-                    <a class="projects__project-links-1" href="https://github.com/knoellouis/Booking-App">
+        </div>
+        <div class="project__3">
+            <h3 class="project__title heading-3 mb-sm">Trillo</h3>
+            <img class="project__img mb-sm" src="img/Trillo.jpg" alt="">
+            <p class="project__description">A modern style booking web app designed to help users find
+                make and save bookings for hotels, flights, car rentals and tours. </p>
+
+            <div class="project__buttons">
+                <button class="project__buttons-1 btn">
+                    <a href="https://github.com/knoellouis/Booking-App">
                         View Code
                     </a>
                 </button>
-                <button class="button btn">
-                    <a class="projects__project-links-2" href="https://trillobooking.netlify.app/">
+                <button class="project__buttons-2 btn">
+                    <a href="https://trillobooking.netlify.app/">
                         View Demo
                     </a>
                 </button>
             </div>
+
         </div>
     </section>
 
@@ -343,7 +320,7 @@
             <input class="contact__form-element mb-sm" type="text" placeholder="Subject">
             <textarea class="contact__form-message mb-lg" name="message" cols="30" rows="10" placeholder="Your message"
                 required></textarea>
-            <button class="contact__form-btn btn" type="submit">Send Message </button>
+            <button class="contact__form-button" type="submit">Send Message </button>
         </form>
 
 

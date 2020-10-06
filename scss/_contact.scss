@@ -1,9 +1,9 @@
 .contact {
   grid-row: 5 / 6;
-  grid-column: 2 / 12;
+  grid-column: 2 / 7;
   padding: 7rem;
-  background-color: $color-primary;
-  color: $color-white;
+  background-color: transparent;
+  color: $color-primary;
   display: grid;
   grid-template-rows: repeat(
     2,
@@ -13,14 +13,20 @@
   grid-gap: 2rem;
   font-size: 1.4rem;
 
-  @media only screen and (max-width: $bp-small) {
-    grid-column: 1 / 13;
+  @media only screen and (min-width: $bp-xlarge) {
+    padding: 10rem;
   }
 
-  @media only screen and (max-width: $bp-miniscul) {
+  @media only screen and (max-width: $bp-medium) {
+    padding: 9rem;
+    grid-column: 1 / 8;
+  }
+
+  @media only screen and (max-width: $bp-xsmall) {
     display: flex;
     flex-direction: column;
     height: fit-content;
+    padding: 5rem;
   }
 
   &__heading {
@@ -39,8 +45,16 @@
     height: 10rem;
     padding: 3rem;
 
-    @media only screen and (max-width: $bp-miniscul) {
+    @media only screen and (max-width: $bp-xsmall) {
+      // grid-gap: 5rem;
+      padding: 1rem;
+      grid-template-columns: 1fr;
+      margin-bottom: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-xxsmall) {
       grid-gap: 4rem;
+      margin-bottom: 0;
     }
 
     &-data {
@@ -48,13 +62,17 @@
       justify-content: flex-start;
       align-items: center;
 
+      @media only screen and (max-width: $bp-xsmall) {
+        margin-top: 5rem;
+      }
+
       &--icon {
         width: 2.5rem;
         height: 2.5rem;
-        fill: $color-white;
+        fill: $color-primary-dark;
         margin-right: 2rem;
 
-        @media only screen and (max-width: $bp-miniscul) {
+        @media only screen and (max-width: $bp-xxsmall) {
           width: 2rem;
           height: 2rem;
         }
@@ -77,6 +95,11 @@
         p {
           width: 20rem;
           height: 3rem;
+
+          @media only screen and (max-width: $bp-xsmall) {
+            width: fit-content;
+            height: fit-content;
+          }
         }
       }
 
@@ -97,6 +120,11 @@
         p {
           width: 20rem;
           height: 3rem;
+
+          @media only screen and (max-width: $bp-xsmall) {
+            width: fit-content;
+            height: fit-content;
+          }
         }
       }
 
@@ -117,6 +145,11 @@
         p {
           width: 20rem;
           height: 3rem;
+
+          @media only screen and (max-width: $bp-xsmall) {
+            width: fit-content;
+            height: fit-content;
+          }
         }
       }
     }
@@ -130,22 +163,25 @@
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     padding: 0;
-    @media only screen and (max-width: $bp-miniscul) {
+
+    @media only screen and (max-width: $bp-xsmall) {
       display: flex;
       flex-direction: column;
-      padding-top: 7rem;
+      padding-top: 4rem;
+      margin-top: 5rem;
     }
 
     &-element {
-      width: 100%;
       border: none;
-      // border-radius: 2rem;
+      width: 100%;
       padding: 2rem;
       font-size: 1.3rem;
       font-family: $font-primary;
-      color: $color-secondary;
+      color: $color-white;
+      background-color: $color-primary;
+      box-shadow: $shadow-light;
       &::placeholder {
-        color: $color-primary-dark;
+        color: $color-white;
       }
       &:focus {
         outline: none;
@@ -159,14 +195,16 @@
       padding: 2rem;
       font-family: $font-primary;
       font-size: 1.3rem;
-      color: $color-secondary;
+      color: $color-white;
+      background-color: $color-primary;
       width: 100%;
       height: 15rem;
+      box-shadow: $shadow-light;
 
       &::placeholder {
         font-family: $font-primary;
         font-size: 1.3rem;
-        color: $color-primary-dark;
+        color: $color-white;
       }
 
       &:focus {
@@ -175,9 +213,69 @@
       }
     }
 
-    &-btn {
+    &-button {
+      background-color: $color-primary;
+      color: $color-white;
+      border: 1px solid white;
+      font-family: $font-primary;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 2rem 4rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      line-height: 0;
+
+      a,
+      &:visited {
+        text-decoration: none;
+        color: $color-white;
+      }
+
+      &:hover {
+        background-color: $color-secondary;
+        border: 1px solid transparent;
+      }
+
       width: 50%;
-      height: 6rem;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 80%;
+
+        font-size: 1.2rem;
+        padding: 0;
+        border: none;
+
+        &:hover {
+          background-color: none;
+          border: none;
+        }
+      }
+      @media only screen and (max-width: $bp-xsmall) {
+        width: 70%;
+        font-size: 1.2rem;
+        color: $color-secondary;
+        background-color: $color-primary;
+        color: $color-white;
+        border: 1px solid white;
+        font-family: $font-primary;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 2rem 4rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        line-height: 0;
+
+        a,
+        &:visited {
+          text-decoration: none;
+          color: $color-white;
+        }
+
+        &:hover {
+          background-color: $color-secondary;
+          border: 1px solid transparent;
+        }
+      }
     }
   }
 }
