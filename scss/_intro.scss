@@ -50,25 +50,6 @@
     }
   }
 
-  // &__greeting {
-  // grid-area: greeting;
-  // display: grid;
-  // grid-template-areas: "hello hello hello hello"
-  //                      "name name name name"
-  //                      "title title title title"
-  //                      "des des des des";
-  // grid-template-rows: repeat(4, 1fr);
-  // grid-template-columns: repeat(4, 1fr);
-  // padding-left: 10rem;
-
-  // @media only screen and (max-width: $bp-small) {
-  //   margin-left: 5rem;
-  // }
-
-  // @media only screen and (max-width: $bp-xxsmall) {
-  //   margin-top: 3rem;
-  // }
-
   &__hello {
     color: $color-primary;
     grid-area: hello;
@@ -90,6 +71,12 @@
   &__period {
     color: $color-secondary;
     font-size: 7rem;
+    margin-left: .75rem;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 5rem;
+      
+    }
   }
 
   &__jobtitle {
@@ -109,5 +96,5 @@
   &__description {
     font-size: 1.8rem;
   }
-  // }
+  
 }
