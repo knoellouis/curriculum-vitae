@@ -1,6 +1,6 @@
 .nav {
   position: fixed;
-  background-color: $color-white;
+  background-color: $color-primary-dark;
   // box-shadow: $shadow-light;
   width: 100vw;
 
@@ -18,7 +18,7 @@
         &--icon {
           width: 2.75rem;
           height: 2.75rem;
-          fill: $color-primary-dark;
+          fill: $color-white;
 
           @media only screen and (max-width: $bp-xxsmall) {
             width: 2.3rem;

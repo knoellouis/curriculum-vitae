@@ -1,13 +1,14 @@
 .skills {
   grid-row: 3 / 4;
   grid-column: 2 / 7;
-  background-color: transparent;
+  background-color: $color-primary-fade;
   padding: 7rem;
   color: $color-primary;
   display: grid;
-  grid-template-rows: min-content repeat(6, 1fr);
+  grid-template-rows: min-content repeat(5, 1fr);
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
+  box-shadow: 0, 2rem, 4rem rgba(0, 0, 0, 0.527);
 
   @media only screen and (min-width: $bp-xlarge) {
     padding: 10rem;
@@ -36,7 +37,6 @@
   }
 
   &__skill {
-
     &-1 {
       grid-row: 2 / 3;
       grid-column: 1 / 2;
@@ -108,8 +108,7 @@
     &-8,
     &-9,
     &-10 {
-
-      &:not(last-child){
+      &:not(last-child) {
         margin-bottom: 5rem;
       }
 

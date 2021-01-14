@@ -1,15 +1,15 @@
 .projects {
   grid-row: 4 / 5;
   grid-column: 2 / 7;
-  background-color: $color-primary;
+  background-color: $color-primary-fade;
   padding: 7rem;
-  color: $color-white;
+  color: $color-primary-dark;
   font-size: 1.4rem;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: min-content, repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
-  border-radius: 2rem;
+  // border-radius: 2rem;
 
   @media only screen and (max-width: $bp-medium) {
     padding: 9rem;
@@ -32,7 +32,6 @@
   .project {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
-    background-color: $color-white-fade;
 
     @media only screen and (max-width: $bp-small) {
       grid-gap: 2rem;
@@ -44,6 +43,8 @@
         min-content minmax(20rem 1fr)
         1fr 1fr;
       grid-template-columns: repeat(4, 1fr);
+      background-color: $color-white;
+      padding: 2rem 5rem;
 
       @media only screen and (max-width: $bp-small) {
         grid-template-rows: repeat(4, min-content);
@@ -68,6 +69,8 @@
         min-content minmax(20rem 1fr)
         1fr 1fr;
       grid-template-columns: repeat(4, 1fr);
+      background-color: $color-white;
+      padding: 2rem 5rem;
 
       @media only screen and (max-width: $bp-small) {
         grid-template-rows: repeat(4, min-content);
@@ -92,6 +95,8 @@
         min-content minmax(20rem 1fr)
         1fr 1fr;
       grid-template-columns: repeat(4, 1fr);
+      background-color: $color-white;
+      padding: 2rem 5rem;
 
       @media only screen and (max-width: $bp-small) {
         grid-template-rows: repeat(4, min-content);
@@ -116,6 +121,8 @@
         min-content minmax(20rem 1fr)
         1fr 1fr;
       grid-template-columns: repeat(4, 1fr);
+      background-color: $color-white;
+      padding: 2rem 5rem;
 
       @media only screen and (max-width: $bp-small) {
         grid-template-rows: repeat(4, min-content);
@@ -140,6 +147,8 @@
         min-content minmax(20rem 1fr)
         1fr 1fr;
       grid-template-columns: repeat(4, 1fr);
+      background-color: $color-white;
+      padding: 2rem 5rem;
 
       @media only screen and (max-width: $bp-small) {
         grid-template-rows: repeat(4, min-content);
@@ -164,6 +173,8 @@
         min-content minmax(20rem 1fr)
         1fr 1fr;
       grid-template-columns: repeat(4, 1fr);
+      background-color: $color-white;
+      padding: 2rem 5rem;
 
       @media only screen and (max-width: $bp-small) {
         grid-template-rows: repeat(4, min-content);
@@ -188,6 +199,8 @@
         min-content minmax(20rem 1fr)
         1fr 1fr;
       grid-template-columns: repeat(4, 1fr);
+      background-color: $color-white;
+      padding: 2rem 5rem;
 
       @media only screen and (max-width: $bp-small) {
         grid-template-rows: repeat(4, min-content);
@@ -212,6 +225,8 @@
         min-content minmax(20rem 1fr)
         1fr 1fr;
       grid-template-columns: repeat(4, 1fr);
+      background-color: $color-white;
+      padding: 2rem 5rem;
 
       @media only screen and (max-width: $bp-small) {
         grid-template-rows: repeat(4, min-content);
@@ -250,7 +265,7 @@
       grid-row: 2 / 3;
       grid-column: 1 / -1;
       width: 100%;
-      border-radius: 1rem;
+      // border-radius: 1rem;
 
       @media only screen and (max-width: $bp-small) {
         grid-row: 2 / 4;
