@@ -11,62 +11,62 @@ $color-white-fade: #ffffff21;
 
 $color-pink: #ea9a96;
 
-$shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
-$shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
-
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
 
 // FONT VARIABLES
-$font-primary: 'Lato', sans-serif;;
+$font-primary: 'Lato', sans-serif;
 
 // RESPONSIVE BREAKPOINTS
-$bp-xlarge: 100em;  // 1600px
-$bp-large: 87.5em;  //1400px
-$bp-medium: 75em;   // 1200px
-$bp-small: 62.5em;   // 1000px
-$bp-xsmall: 50em;    // 800px;
-$bp-xxsmall: 25em;    // 400px;
+$bp-xlarge: 100em; // 1600px
+$bp-large: 87.5em; //1400px
+$bp-medium: 75em; // 1200px
+$bp-small: 62.5em; // 1000px
+$bp-xsmall: 50em; // 800px;
+$bp-xxsmall: 25em; // 400px;
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 
-    @media only screen and (min-width: $bp-xlarge) {
-        font-size: 70%;
-      }
+  @media only screen and (min-width: $bp-xlarge) {
+    font-size: 70%;
+  }
 
-    @media only screen and (max-width: $bp-medium) {
-        font-size: 58%;
-      }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 58%;
+  }
 
-    @media only screen and (max-width: $bp-small) {
-        font-size: 53%;
-      }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 53%;
+  }
 
-    @media only screen and (max-width: $bp-xsmall) {
-        font-size: 50%;
-      }
+  @media only screen and (max-width: $bp-xsmall) {
+    font-size: 50%;
+  }
 }
 
 body {
-    font-family: $font-primary;
-    line-height: 1.6;
+  font-family: $font-primary;
+  line-height: 1.6;
+  background-color: $color-white;
 }
 
 .container {
-    display: grid;
-    grid-template-rows: max-content repeat(3, min-content) max-content min-content;
-    grid-template-columns: 7.15rem repeat(5, 1fr) 7.15rem;
-    grid-gap: 2rem;
+  display: grid;
+  grid-template-rows: max-content repeat(3, min-content) max-content min-content;
+  grid-template-columns: 7.15rem repeat(5, 1fr) 7.15rem;
+  grid-gap: 2rem;
 
-    @media only screen and (max-width: $bp-small) {
-      grid-gap: 1rem;
-    }
+  @media only screen and (max-width: $bp-small) {
+    grid-gap: 1rem;
+  }
 }

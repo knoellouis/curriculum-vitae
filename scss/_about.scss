@@ -3,10 +3,7 @@
   grid-column: 2 / 7;
   background-color: $color-primary;
   display: grid;
-  grid-template-rows: min-content repeat(
-      4,
-      min-content
-    );
+  grid-template-rows: min-content repeat(4, min-content);
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 0.5rem;
   color: $color-white;
@@ -77,7 +74,7 @@
       text-decoration: none;
       padding: 2rem 4rem;
       cursor: pointer;
-      transition: all .2s;
+      transition: all 0.2s;
       line-height: 0;
 
       a,
@@ -86,55 +83,49 @@
         color: $color-white;
         border: none;
       }
-  
+
       &:hover {
-          background-color: $color-secondary;
-          border: 1px solid transparent;
+        background-color: $color-secondary;
+        border: 1px solid transparent;
       }
-  
+
       @media only screen and (max-width: $bp-small) {
-        width: 50%;  
+        width: 50%;
         font-size: 1.2rem;
-          padding: 0;
-  
-          &:hover {
-              background-color: none;
-              // border: none;
-          }
+        padding: 0;
+
+        &:hover {
+          background-color: none;
+          // border: none;
         }
-  
-        @media only screen and (max-width: $bp-xsmall) {
+      }
+
+      @media only screen and (max-width: $bp-xsmall) {
+        color: $color-secondary;
+        grid-row: 3 / 4;
+        grid-column: 1 / 6;
+        width: 30%;
+        justify-self: center;
+        a,
+        &:visited {
+          text-decoration: none;
           color: $color-secondary;
-          grid-row: 3 / 4;
-          grid-column: 1 / 6;
-          width: 30%;
-          justify-self: center;
-          a, &:visited {
-              text-decoration: none;
-              color: $color-secondary;
-            }
-        
-            &:hover {
-                background-color: transparent;
-                color: $color-white;
-            }
+        }
+
+        &:hover {
+          background-color: transparent;
+          color: $color-white;
+        }
       }
 
       @media only screen and (max-width: $bp-xsmall) {
         width: 50%;
       }
 
-
-      
-
       @media only screen and (max-width: $bp-small) {
-        
       }
       @media only screen and (max-width: $bp-xsmall) {
-       
       }
-
-      
     }
 
     &-social {
