@@ -1,4 +1,4 @@
-.nav {
+.navigation {
   position: fixed;
   background-color: $color-white;
   // box-shadow: $shadow-light;
@@ -12,11 +12,9 @@
     padding: 2rem;
 
     &-item {
-
       &--link {
+        transition: all 0.2s;
 
-        transition: all .2s;
-        
         &--icon {
           width: 2.75rem;
           height: 2.75rem;
