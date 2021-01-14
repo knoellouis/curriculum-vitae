@@ -865,7 +865,7 @@ body {
   padding: 7rem;
   color: #726a63;
   display: grid;
-  grid-template-rows: min-content repeat(5, 1fr);
+  grid-template-rows: min-content repeat(7, 1fr);
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
   box-shadow: 0, 2rem, 4rem rgba(0, 0, 0, 0.527); }
@@ -905,38 +905,56 @@ body {
     grid-row: 6 / 7;
     grid-column: 1 / 2; }
   .skills__skill-6 {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3; }
+    grid-row: 7 / 8;
+    grid-column: 1 / 2; }
     @media only screen and (max-width: 50em) {
       .skills__skill-6 {
         grid-row: 7 / 8; } }
   .skills__skill-7 {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3; }
+    grid-row: 8 / 9;
+    grid-column: 1 / 2; }
     @media only screen and (max-width: 50em) {
       .skills__skill-7 {
         grid-row: 8 / 9; } }
   .skills__skill-8 {
-    grid-row: 4 / 5;
+    grid-row: 2 / 3;
     grid-column: 2 / 3; }
     @media only screen and (max-width: 50em) {
       .skills__skill-8 {
         grid-row: 9 / 10; } }
   .skills__skill-9 {
-    grid-row: 5 / 6;
+    grid-row: 3 / 4;
     grid-column: 2 / 3; }
     @media only screen and (max-width: 50em) {
       .skills__skill-9 {
         grid-row: 10 / 11; } }
   .skills__skill-10 {
-    grid-row: 6 / 7;
+    grid-row: 4 / 5;
     grid-column: 2 / 3; }
     @media only screen and (max-width: 50em) {
       .skills__skill-10 {
         grid-row: 11 / 12; } }
-  .skills__skill-1:not(last-child), .skills__skill-2:not(last-child), .skills__skill-3:not(last-child), .skills__skill-4:not(last-child), .skills__skill-5:not(last-child), .skills__skill-6:not(last-child), .skills__skill-7:not(last-child), .skills__skill-8:not(last-child), .skills__skill-9:not(last-child), .skills__skill-10:not(last-child) {
+  .skills__skill-11 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3; }
+    @media only screen and (max-width: 50em) {
+      .skills__skill-11 {
+        grid-row: 12 / 13; } }
+  .skills__skill-12 {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3; }
+    @media only screen and (max-width: 50em) {
+      .skills__skill-12 {
+        grid-row: 13 / 14; } }
+  .skills__skill-13 {
+    grid-row: 7 / 8;
+    grid-column: 2 / 3; }
+    @media only screen and (max-width: 50em) {
+      .skills__skill-13 {
+        grid-row: 14 / 15; } }
+  .skills__skill-1:not(last-child), .skills__skill-2:not(last-child), .skills__skill-3:not(last-child), .skills__skill-4:not(last-child), .skills__skill-5:not(last-child), .skills__skill-6:not(last-child), .skills__skill-7:not(last-child), .skills__skill-8:not(last-child), .skills__skill-9:not(last-child), .skills__skill-10:not(last-child), .skills__skill-11:not(last-child), .skills__skill-12:not(last-child), .skills__skill-13:not(last-child) {
     margin-bottom: 5rem; }
-  .skills__skill-1--heading, .skills__skill-2--heading, .skills__skill-3--heading, .skills__skill-4--heading, .skills__skill-5--heading, .skills__skill-6--heading, .skills__skill-7--heading, .skills__skill-8--heading, .skills__skill-9--heading, .skills__skill-10--heading {
+  .skills__skill-1--heading, .skills__skill-2--heading, .skills__skill-3--heading, .skills__skill-4--heading, .skills__skill-5--heading, .skills__skill-6--heading, .skills__skill-7--heading, .skills__skill-8--heading, .skills__skill-9--heading, .skills__skill-10--heading, .skills__skill-11--heading, .skills__skill-12--heading, .skills__skill-13--heading {
     color: #726a63;
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -944,19 +962,19 @@ body {
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between; }
-  .skills__skill-1--percent, .skills__skill-2--percent, .skills__skill-3--percent, .skills__skill-4--percent, .skills__skill-5--percent, .skills__skill-6--percent, .skills__skill-7--percent, .skills__skill-8--percent, .skills__skill-9--percent, .skills__skill-10--percent {
+  .skills__skill-1--percent, .skills__skill-2--percent, .skills__skill-3--percent, .skills__skill-4--percent, .skills__skill-5--percent, .skills__skill-6--percent, .skills__skill-7--percent, .skills__skill-8--percent, .skills__skill-9--percent, .skills__skill-10--percent, .skills__skill-11--percent, .skills__skill-12--percent, .skills__skill-13--percent {
     justify-self: end; }
-  .skills__skill-1--fullbar, .skills__skill-2--fullbar, .skills__skill-3--fullbar, .skills__skill-4--fullbar, .skills__skill-5--fullbar, .skills__skill-6--fullbar, .skills__skill-7--fullbar, .skills__skill-8--fullbar, .skills__skill-9--fullbar, .skills__skill-10--fullbar {
+  .skills__skill-1--fullbar, .skills__skill-2--fullbar, .skills__skill-3--fullbar, .skills__skill-4--fullbar, .skills__skill-5--fullbar, .skills__skill-6--fullbar, .skills__skill-7--fullbar, .skills__skill-8--fullbar, .skills__skill-9--fullbar, .skills__skill-10--fullbar, .skills__skill-11--fullbar, .skills__skill-12--fullbar, .skills__skill-13--fullbar {
     border: 1px solid #3f4140;
     height: 1rem;
     border-radius: 5rem; }
-  .skills__skill-1--progbar, .skills__skill-2--progbar, .skills__skill-3--progbar, .skills__skill-4--progbar, .skills__skill-5--progbar, .skills__skill-6--progbar, .skills__skill-7--progbar, .skills__skill-8--progbar, .skills__skill-9--progbar, .skills__skill-10--progbar {
+  .skills__skill-1--progbar, .skills__skill-2--progbar, .skills__skill-3--progbar, .skills__skill-4--progbar, .skills__skill-5--progbar, .skills__skill-6--progbar, .skills__skill-7--progbar, .skills__skill-8--progbar, .skills__skill-9--progbar, .skills__skill-10--progbar, .skills__skill-11--progbar, .skills__skill-12--progbar, .skills__skill-13--progbar {
     height: 0.8rem;
     background-color: #f8b24f;
     display: block;
     border-radius: 5rem; }
   @media only screen and (max-width: 50em) {
-    .skills__skill-1, .skills__skill-2, .skills__skill-3, .skills__skill-4, .skills__skill-5, .skills__skill-6, .skills__skill-7, .skills__skill-8, .skills__skill-9, .skills__skill-10 {
+    .skills__skill-1, .skills__skill-2, .skills__skill-3, .skills__skill-4, .skills__skill-5, .skills__skill-6, .skills__skill-7, .skills__skill-8, .skills__skill-9, .skills__skill-10, .skills__skill-11, .skills__skill-12, .skills__skill-13 {
       grid-column: 1 / -1; } }
 
 .heading-1, .heading-2, .heading-3 {

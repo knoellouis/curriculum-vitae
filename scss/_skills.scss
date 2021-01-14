@@ -5,7 +5,7 @@
   padding: 7rem;
   color: $color-primary;
   display: grid;
-  grid-template-rows: min-content repeat(5, 1fr);
+  grid-template-rows: min-content repeat(7, 1fr);
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
   box-shadow: 0, 2rem, 4rem rgba(0, 0, 0, 0.527);
@@ -58,23 +58,23 @@
       grid-column: 1 / 2;
     }
     &-6 {
-      grid-row: 2 / 3;
-      grid-column: 2 / 3;
+      grid-row: 7 / 8;
+      grid-column: 1 / 2;
 
       @media only screen and (max-width: $bp-xsmall) {
         grid-row: 7 / 8;
       }
     }
     &-7 {
-      grid-row: 3 / 4;
-      grid-column: 2 / 3;
+      grid-row: 8 / 9;
+      grid-column: 1 / 2;
 
       @media only screen and (max-width: $bp-xsmall) {
         grid-row: 8 / 9;
       }
     }
     &-8 {
-      grid-row: 4 / 5;
+      grid-row: 2 / 3;
       grid-column: 2 / 3;
 
       @media only screen and (max-width: $bp-xsmall) {
@@ -82,7 +82,7 @@
       }
     }
     &-9 {
-      grid-row: 5 / 6;
+      grid-row: 3 / 4;
       grid-column: 2 / 3;
 
       @media only screen and (max-width: $bp-xsmall) {
@@ -90,11 +90,36 @@
       }
     }
     &-10 {
-      grid-row: 6 / 7;
+      grid-row: 4 / 5;
       grid-column: 2 / 3;
 
       @media only screen and (max-width: $bp-xsmall) {
         grid-row: 11 / 12;
+      }
+    }
+
+    &-11 {
+      grid-row: 5 / 6;
+      grid-column: 2 / 3;
+
+      @media only screen and (max-width: $bp-xsmall) {
+        grid-row: 12 / 13;
+      }
+    }
+    &-12 {
+      grid-row: 6 / 7;
+      grid-column: 2 / 3;
+
+      @media only screen and (max-width: $bp-xsmall) {
+        grid-row: 13 / 14;
+      }
+    }
+    &-13 {
+      grid-row: 7 / 8;
+      grid-column: 2 / 3;
+
+      @media only screen and (max-width: $bp-xsmall) {
+        grid-row: 14 / 15;
       }
     }
 
@@ -107,7 +132,10 @@
     &-7,
     &-8,
     &-9,
-    &-10 {
+    &-10,
+    &-11,
+    &-12,
+    &-13 {
       &:not(last-child) {
         margin-bottom: 5rem;
       }
