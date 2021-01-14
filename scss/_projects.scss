@@ -51,7 +51,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
         border: 2px solid $color-white-fade;
-        border-radius: 1rem;
+        // border-radius: 1rem;
         padding: 2rem;
       }
 
@@ -77,7 +77,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
         border: 2px solid $color-white-fade;
-        border-radius: 1rem;
+        // border-radius: 1rem;
         padding: 2rem;
       }
 
@@ -103,7 +103,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
         border: 2px solid $color-white-fade;
-        border-radius: 1rem;
+        // border-radius: 1rem;
         padding: 2rem;
       }
 
@@ -129,7 +129,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
         border: 2px solid $color-white-fade;
-        border-radius: 1rem;
+        // border-radius: 1rem;
         padding: 2rem;
       }
 
@@ -155,7 +155,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
         border: 2px solid $color-white-fade;
-        border-radius: 1rem;
+        // border-radius: 1rem;
         padding: 2rem;
       }
 
@@ -181,7 +181,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
         border: 2px solid $color-white-fade;
-        border-radius: 1rem;
+        // border-radius: 1rem;
         padding: 2rem;
       }
 
@@ -207,7 +207,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
         border: 2px solid $color-white-fade;
-        border-radius: 1rem;
+        // border-radius: 1rem;
         padding: 2rem;
       }
 
@@ -233,7 +233,33 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
         border: 2px solid $color-white-fade;
-        border-radius: 1rem;
+        // border-radius: 1rem;
+        padding: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-xsmall) {
+        grid-template-rows: repeat(4, min-content);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0.5rem;
+        border: 2px solid $color-white-fade;
+        padding: 1rem;
+      }
+    }
+    &__9 {
+      display: grid;
+      grid-template-rows:
+        min-content minmax(20rem 1fr)
+        1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
+      background-color: $color-white;
+      padding: 2rem 5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        grid-template-rows: repeat(4, min-content);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+        border: 2px solid $color-white-fade;
+        // border-radius: 1rem;
         padding: 2rem;
       }
 

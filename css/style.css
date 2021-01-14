@@ -625,7 +625,6 @@ body {
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 2rem;
           border: 2px solid #ffffff41;
-          border-radius: 1rem;
           padding: 2rem; } }
       @media only screen and (max-width: 50em) {
         .projects .project__1 {
@@ -646,7 +645,6 @@ body {
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 2rem;
           border: 2px solid #ffffff41;
-          border-radius: 1rem;
           padding: 2rem; } }
       @media only screen and (max-width: 50em) {
         .projects .project__2 {
@@ -667,7 +665,6 @@ body {
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 2rem;
           border: 2px solid #ffffff41;
-          border-radius: 1rem;
           padding: 2rem; } }
       @media only screen and (max-width: 50em) {
         .projects .project__3 {
@@ -688,7 +685,6 @@ body {
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 2rem;
           border: 2px solid #ffffff41;
-          border-radius: 1rem;
           padding: 2rem; } }
       @media only screen and (max-width: 50em) {
         .projects .project__4 {
@@ -709,7 +705,6 @@ body {
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 2rem;
           border: 2px solid #ffffff41;
-          border-radius: 1rem;
           padding: 2rem; } }
       @media only screen and (max-width: 50em) {
         .projects .project__5 {
@@ -730,7 +725,6 @@ body {
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 2rem;
           border: 2px solid #ffffff41;
-          border-radius: 1rem;
           padding: 2rem; } }
       @media only screen and (max-width: 50em) {
         .projects .project__6 {
@@ -751,7 +745,6 @@ body {
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 2rem;
           border: 2px solid #ffffff41;
-          border-radius: 1rem;
           padding: 2rem; } }
       @media only screen and (max-width: 50em) {
         .projects .project__7 {
@@ -772,10 +765,29 @@ body {
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 2rem;
           border: 2px solid #ffffff41;
-          border-radius: 1rem;
           padding: 2rem; } }
       @media only screen and (max-width: 50em) {
         .projects .project__8 {
+          grid-template-rows: repeat(4, min-content);
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 0.5rem;
+          border: 2px solid #ffffff41;
+          padding: 1rem; } }
+    .projects .project__9 {
+      display: grid;
+      grid-template-rows: min-content minmax(20rem 1fr) 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
+      background-color: #ffffff;
+      padding: 2rem 5rem; }
+      @media only screen and (max-width: 62.5em) {
+        .projects .project__9 {
+          grid-template-rows: repeat(4, min-content);
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 2rem;
+          border: 2px solid #ffffff41;
+          padding: 2rem; } }
+      @media only screen and (max-width: 50em) {
+        .projects .project__9 {
           grid-template-rows: repeat(4, min-content);
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 0.5rem;
