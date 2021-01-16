@@ -13,52 +13,71 @@
 </head>
 
 <body class="container">
+    <div class="navigation">
+        <nav class="navigation__nav">
+            <ul class="navigation__nav--list">
+                <li class="navigation__nav--list-item">
+                    <a href="#intro" class="navigation__nav--link scrollTo">
+                        <svg class="navigation__nav--icon">
+                            <use xlink:href="img/sprite.svg#icon-home-run"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="navigation__nav--list-item">
+                    <a href="#about" class="navigation__nav--link scrollTo">
+                        <svg class="navigation__nav--icon">
+                            <use xlink:href="img/sprite.svg#icon-user"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="navigation__nav--list-item">
+                    <a href="#skills" class="navigation__nav--link scrollTo">
+                        <svg class="navigation__nav--icon">
+                            <use xlink:href="img/sprite.svg#icon-coding"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="navigation__nav--list-item">
+                    <a href="#projects" class="navigation__nav--link scrollTo">
+                        <svg class="navigation__nav--icon">
+                            <use xlink:href="img/sprite.svg#icon-menu"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="navigation__nav--list-item">
+                    <a href="#contact" class="navigation__nav--link scrollTo">
+                        <svg class="navigation__nav--icon">
+                            <use xlink:href="img/sprite.svg#icon-mail"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navigation__mobile">
+        <input type="checkbox" class="navigation__mobile--checkbox" id="navi-toggle">
 
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__list-item">
-                <a href="#intro" class="nav__list-item--link scrollTo">
-                    <svg class="nav__list-item--link--icon">
-                        <use xlink:href="img/sprite.svg#icon-home-run"></use>
-                    </svg>
-                    <!-- <p class="nav__list-item--link--description">home</p>  -->
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="#about" class="nav__list-item--link scrollTo">
-                    <svg class="nav__list-item--link--icon">
-                        <use xlink:href="img/sprite.svg#icon-user"></use>
-                    </svg>
-                    <!-- <p class="nav__list-item--link--description">about</p>  -->
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="#skills" class="nav__list-item--link scrollTo">
-                    <svg class="nav__list-item--link--icon">
-                        <use xlink:href="img/sprite.svg#icon-coding"></use>
-                    </svg>
-                    <!-- <p class="nav__list-item--link--description">skills</p>  -->
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="#projects" class="nav__list-item--link scrollTo">
-                    <svg class="nav__list-item--link--icon">
-                        <use xlink:href="img/sprite.svg#icon-menu"></use>
-                    </svg>
-                    <!-- <p class="nav__list-item--link--description">projects</p>  -->
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="#contact" class="nav__list-item--link scrollTo">
-                    <svg class="nav__list-item--link--icon">
-                        <use xlink:href="img/sprite.svg#icon-mail"></use>
-                    </svg>
-                    <!-- <p class="nav__list-item--link--description">contact</p>  -->
-                </a>
-            </li>
-        </ul>
-    </nav>
+        <label for="navi-toggle" class="navigation__mobile--button">
+            <span class="navigation__mobile--icon">&nbsp;</span>
+        </label>
 
+        <div class="navigation__mobile--background">&nbsp;</div>
+
+        <nav class="navigation__mobile--nav">
+            <ul class="navigation__mobile--list">
+                <li class="navigation__mobile--item"><a href="#intro" class="navigation__mobile--link">Home</a>
+                </li>
+                <li class="navigation__mobile--item"><a href="#about" class="navigation__mobile--link">About</a>
+                </li>
+                <li class="navigation__mobile--item"><a href="#skills" class="navigation__mobile--link">Skills</a>
+                </li>
+                <li class="navigation__mobile--item"><a href="#projects" class="navigation__mobile--link">Project</a>
+                </li>
+                <li class="navigation__mobile--item"><a href="#contact" class="navigation__mobile--link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <header class="intro" id="intro">
         <img class="intro__img" src="img/IMG_6470 small square.jpg" alt="">
 
