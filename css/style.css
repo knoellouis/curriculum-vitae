@@ -637,14 +637,16 @@ body {
       background-color: #3f4140; }
     .navigation__mobile--list {
       position: absolute;
-      top: 50%;
+      top: 25%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -5%);
       list-style: none;
       text-align: center;
       width: 100%; }
     .navigation__mobile--item {
       margin: 1rem; }
+      .navigation__mobile--item:not(:last-child) {
+        margin-bottom: 2.5rem; }
     .navigation__mobile--link, .navigation__mobile--link:link, .navigation__mobile--link:visited {
       display: inline-block;
       font-size: 1.5rem;
