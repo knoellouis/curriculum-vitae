@@ -504,7 +504,8 @@ body {
     align-self: end; }
     @media only screen and (max-width: 50em) {
       .intro__hello {
-        margin-bottom: 1rem; } }
+        margin-bottom: 1rem;
+        margin-top: 2rem; } }
   .intro__name {
     grid-area: name; }
     @media only screen and (max-width: 50em) {
@@ -590,18 +591,18 @@ body {
     position: fixed;
     display: block;
     width: 100vw;
-    height: 10rem;
+    height: 8rem;
     background-color: #3f4140; }
     .navigation__mobile--checkbox {
       display: none;
       position: fixed;
-      top: 1.5rem;
+      top: 1rem;
       right: 7rem; }
     .navigation__mobile--button {
       height: 5rem;
       width: 5rem;
       position: fixed;
-      top: 1.5rem;
+      top: 1rem;
       right: 5rem;
       z-index: 2000;
       text-align: center;

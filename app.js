@@ -24,13 +24,25 @@
 //     });
 // });
 
-$('.scrollTo').click(function(){
-    var getElement = $(this).attr('href');
-    if($(getElement).length) {
-        var getOffset = $(getElement).offset().top;
-        $('html,body').animate({
-            scrollTop: getOffset - 75
-        }, 500);
-    }
-    return false;
-})
+$('.scrollTo').click(function () {
+  var getElement = $(this).attr('href');
+  if ($(getElement).length) {
+    var getOffset = $(getElement).offset().top;
+    $('html,body').animate(
+      {
+        scrollTop: getOffset - 75,
+      },
+      500
+    );
+  }
+  return false;
+});
+
+function hideMenu() {
+  let menuOpen = document.querySelector('.navigation__mobile--checkbox').checked;
+
+  if ((menuOpen = true)) {
+    document.querySelector('.navigation__mobile--checkbox').checked = false;
+  }
+}
+window.addEventListener('scroll', hideMenu);

@@ -13,13 +13,13 @@
     position: fixed;
     display: block;
     width: 100vw;
-    height: 10rem;
+    height: 8rem;
     background-color: $color-primary-dark;
 
     &--checkbox {
       display: none;
       position: fixed;
-      top: 1.5rem;
+      top: 1rem;
       right: 7rem;
     }
 
@@ -27,7 +27,7 @@
       height: 5rem;
       width: 5rem;
       position: fixed;
-      top: 1.5rem;
+      top: 1rem;
       right: 5rem;
       z-index: 2000;
       // box-shadow: 0 1rem 3rem rgba(#000, 0.1);
@@ -157,3 +157,10 @@
     }
   }
 }
+
+// .navigation__mobile--hidden {
+//   opacity: 0;
+// }
+// .navigation__mobile--visible {
+//   opacity: 1;
+// }
