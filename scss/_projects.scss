@@ -35,246 +35,31 @@
   }
 
   .project {
-    grid-row: 2 / 3;
-    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows:
+      min-content minmax(20rem 1fr)
+      1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: $color-white;
+    padding: 2rem 3rem;
 
     @media only screen and (max-width: $bp-small) {
+      grid-template-rows: repeat(4, min-content);
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+      border: 2px solid $color-white-fade;
+      // border-radius: 1rem;
+      padding: 2rem;
       grid-gap: 2rem;
     }
 
-    &__1 {
-      display: grid;
-      grid-template-rows:
-        min-content minmax(20rem 1fr)
-        1fr 1fr;
+    @media only screen and (max-width: $bp-xsmall) {
+      grid-template-rows: repeat(4, min-content);
       grid-template-columns: repeat(4, 1fr);
-      background-color: $color-white;
-      padding: 2rem 5rem;
-
-      @media only screen and (max-width: $bp-small) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-        border: 2px solid $color-white-fade;
-        // border-radius: 1rem;
-        padding: 2rem;
-      }
-
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0.5rem;
-        border: 2px solid $color-white-fade;
-        padding: 1rem;
-      }
-    }
-    &__2 {
-      display: grid;
-      grid-template-rows:
-        min-content minmax(20rem 1fr)
-        1fr 1fr;
-      grid-template-columns: repeat(4, 1fr);
-      background-color: $color-white;
-      padding: 2rem 5rem;
-
-      @media only screen and (max-width: $bp-small) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-        border: 2px solid $color-white-fade;
-        // border-radius: 1rem;
-        padding: 2rem;
-      }
-
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0.5rem;
-        border: 2px solid $color-white-fade;
-        padding: 1rem;
-      }
-    }
-    &__3 {
-      display: grid;
-      grid-template-rows:
-        min-content minmax(20rem 1fr)
-        1fr 1fr;
-      grid-template-columns: repeat(4, 1fr);
-      background-color: $color-white;
-      padding: 2rem 5rem;
-
-      @media only screen and (max-width: $bp-small) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-        border: 2px solid $color-white-fade;
-        // border-radius: 1rem;
-        padding: 2rem;
-      }
-
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0.5rem;
-        border: 2px solid $color-white-fade;
-        padding: 1rem;
-      }
-    }
-    &__4 {
-      display: grid;
-      grid-template-rows:
-        min-content minmax(20rem 1fr)
-        1fr 1fr;
-      grid-template-columns: repeat(4, 1fr);
-      background-color: $color-white;
-      padding: 2rem 5rem;
-
-      @media only screen and (max-width: $bp-small) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-        border: 2px solid $color-white-fade;
-        // border-radius: 1rem;
-        padding: 2rem;
-      }
-
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0.5rem;
-        border: 2px solid $color-white-fade;
-        padding: 1rem;
-      }
-    }
-    &__5 {
-      display: grid;
-      grid-template-rows:
-        min-content minmax(20rem 1fr)
-        1fr 1fr;
-      grid-template-columns: repeat(4, 1fr);
-      background-color: $color-white;
-      padding: 2rem 5rem;
-
-      @media only screen and (max-width: $bp-small) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-        border: 2px solid $color-white-fade;
-        // border-radius: 1rem;
-        padding: 2rem;
-      }
-
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0.5rem;
-        border: 2px solid $color-white-fade;
-        padding: 1rem;
-      }
-    }
-    &__6 {
-      display: grid;
-      grid-template-rows:
-        min-content minmax(20rem 1fr)
-        1fr 1fr;
-      grid-template-columns: repeat(4, 1fr);
-      background-color: $color-white;
-      padding: 2rem 5rem;
-
-      @media only screen and (max-width: $bp-small) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-        border: 2px solid $color-white-fade;
-        // border-radius: 1rem;
-        padding: 2rem;
-      }
-
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0.5rem;
-        border: 2px solid $color-white-fade;
-        padding: 1rem;
-      }
-    }
-    &__7 {
-      display: grid;
-      grid-template-rows:
-        min-content minmax(20rem 1fr)
-        1fr 1fr;
-      grid-template-columns: repeat(4, 1fr);
-      background-color: $color-white;
-      padding: 2rem 5rem;
-
-      @media only screen and (max-width: $bp-small) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-        border: 2px solid $color-white-fade;
-        // border-radius: 1rem;
-        padding: 2rem;
-      }
-
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0.5rem;
-        border: 2px solid $color-white-fade;
-        padding: 1rem;
-      }
-    }
-    &__8 {
-      display: grid;
-      grid-template-rows:
-        min-content minmax(20rem 1fr)
-        1fr 1fr;
-      grid-template-columns: repeat(4, 1fr);
-      background-color: $color-white;
-      padding: 2rem 5rem;
-
-      @media only screen and (max-width: $bp-small) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-        border: 2px solid $color-white-fade;
-        // border-radius: 1rem;
-        padding: 2rem;
-      }
-
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0.5rem;
-        border: 2px solid $color-white-fade;
-        padding: 1rem;
-      }
-    }
-    &__9 {
-      display: grid;
-      grid-template-rows:
-        min-content minmax(20rem 1fr)
-        1fr 1fr;
-      grid-template-columns: repeat(4, 1fr);
-      background-color: $color-white;
-      padding: 2rem 5rem;
-
-      @media only screen and (max-width: $bp-small) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-        border: 2px solid $color-white-fade;
-        // border-radius: 1rem;
-        padding: 2rem;
-      }
-
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-template-rows: repeat(4, min-content);
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0.5rem;
-        border: 2px solid $color-white-fade;
-        padding: 1rem;
-      }
+      grid-gap: 0.5rem;
+      border: 2px solid $color-white-fade;
+      padding: 3rem;
+      text-align: center;
     }
 
     &__title {
@@ -296,7 +81,6 @@
       grid-row: 2 / 3;
       grid-column: 1 / -1;
       width: 100%;
-      // border-radius: 1rem;
 
       @media only screen and (max-width: $bp-small) {
         grid-row: 2 / 4;
@@ -312,8 +96,6 @@
     &__description {
       grid-row: 3 / 4;
       grid-column: 1 / -1;
-      // max-height: 12rem;
-      // min-height: 8rem;
 
       @media only screen and (max-width: $bp-small) {
         grid-row: 2 / 3;
@@ -347,7 +129,7 @@
         font-size: 1rem;
         grid-row: 4 / 5;
         grid-column: 1 / 5;
-        margin-top: 1.5rem;
+        // margin-top: 1.5rem;
       }
 
       &-1,
@@ -358,8 +140,14 @@
         border: 1px solid $color-white;
 
         @media only screen and (max-width: $bp-xsmall) {
-          margin-top: 2rem;
+          &:not(:last-child) {
+            margin-top: 1rem;
+          }
           width: 40%;
+        }
+
+        @media only screen and (max-width: $bp-xxsmall) {
+          width: 60%;
         }
       }
     }
