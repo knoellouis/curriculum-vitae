@@ -494,9 +494,10 @@ body {
       padding: 5rem; } }
   .intro__container {
     position: relative;
-    width: 336px;
-    height: 336px;
+    width: 33.6rem;
+    height: 33.6rem;
     z-index: -1;
+    margin-right: 3rem;
     grid-area: img;
     justify-self: center; }
     @media only screen and (max-width: 75em) {
@@ -504,7 +505,8 @@ body {
         justify-content: start; } }
     @media only screen and (max-width: 50em) {
       .intro__container {
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem;
+        margin-right: 0; } }
     .intro__container img {
       width: 100%;
       box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
@@ -515,9 +517,12 @@ body {
       top: -40px;
       left: -40px;
       z-index: -1;
-      width: 336px;
-      height: 336px;
+      width: 33.6rem;
+      height: 33.6rem;
       grid-area: img; }
+      @media screen and (max-width: 50em) {
+        .intro__container::before {
+          display: none; } }
   .intro__hello {
     color: #726a63;
     grid-area: hello;
@@ -541,12 +546,15 @@ body {
   .intro__jobtitle {
     grid-area: title;
     align-self: end; }
+    @media only screen and (max-width: 50em) {
+      .intro__jobtitle {
+        font-size: 2.5rem; } }
   .intro__description {
     grid-area: des; }
     @media only screen and (max-width: 50em) {
       .intro__description {
         display: none; } }
-  .intro__jobtitle, .intro__description {
+  .intro__description {
     font-size: 1.8rem; }
 
 .footer {
@@ -622,13 +630,13 @@ body {
       display: none;
       position: fixed;
       top: 1rem;
-      right: 7rem; }
+      right: 5%; }
     .navigation__mobile--button {
       height: 5rem;
       width: 5rem;
       position: fixed;
       top: 1rem;
-      right: 5rem;
+      right: 5%;
       z-index: 2000;
       text-align: center;
       cursor: pointer;
