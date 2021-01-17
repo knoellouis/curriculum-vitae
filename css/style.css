@@ -27,6 +27,8 @@ body {
   background-color: #ffffff; }
 
 .container {
+  max-width: 2000px;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: max-content repeat(3, min-content) max-content min-content;
   grid-template-columns: 7.15rem repeat(5, 1fr) 7.15rem;
@@ -48,7 +50,8 @@ body {
   font-size: 1.75rem; }
   @media only screen and (min-width: 100em) {
     .about {
-      padding: 10rem; } }
+      padding: 10rem;
+      grid-column: 1 / 8; } }
   @media only screen and (max-width: 75em) {
     .about {
       padding: 9rem;
@@ -248,7 +251,8 @@ body {
   font-size: 1.4rem; }
   @media only screen and (min-width: 100em) {
     .contact {
-      padding: 10rem; } }
+      padding: 10rem;
+      grid-column: 1 / 8; } }
   @media only screen and (max-width: 75em) {
     .contact {
       padding: 9rem;
@@ -476,7 +480,8 @@ body {
   grid: 'img img hello' 'img img name' 'img img title' 'img img des'; }
   @media only screen and (min-width: 100em) {
     .intro {
-      padding: 10rem; } }
+      padding: 10rem;
+      grid-column: 1 / 8; } }
   @media only screen and (max-width: 75em) {
     .intro {
       padding: 9rem;
@@ -487,17 +492,32 @@ body {
       justify-content: center;
       text-align: center;
       padding: 5rem; } }
-  .intro__img {
-    width: 30rem;
-    height: 30rem;
+  .intro__container {
+    position: relative;
+    width: 336px;
+    height: 336px;
+    z-index: -1;
     grid-area: img;
     justify-self: center; }
     @media only screen and (max-width: 75em) {
-      .intro__img {
+      .intro__container {
         justify-content: start; } }
     @media only screen and (max-width: 50em) {
-      .intro__img {
+      .intro__container {
         margin-bottom: 2rem; } }
+    .intro__container img {
+      width: 100%;
+      box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+    .intro__container::before {
+      content: '';
+      background: #726a6369;
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      z-index: -1;
+      width: 336px;
+      height: 336px;
+      grid-area: img; }
   .intro__hello {
     color: #726a63;
     grid-area: hello;
@@ -540,6 +560,9 @@ body {
   color: #3f4140;
   transition: all 0.2s;
   margin-bottom: 1.5rem; }
+  @media only screen and (min-width: 100em) {
+    .footer {
+      grid-column: 1 / 8; } }
   @media only screen and (max-width: 75em) {
     .footer {
       grid-column: 1 / 8; } }
@@ -562,7 +585,9 @@ body {
 
 .navigation {
   position: fixed;
-  width: 100vw; }
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto; }
   .navigation__nav {
     background-color: #3f4140; }
     .navigation__nav--list {
@@ -697,6 +722,10 @@ body {
   grid-template-rows: min-content, repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem; }
+  @media only screen and (min-width: 100em) {
+    .projects {
+      padding: 10rem;
+      grid-column: 1 / 8; } }
   @media only screen and (max-width: 75em) {
     .projects {
       padding: 9rem;
@@ -975,7 +1004,8 @@ body {
   box-shadow: 0, 2rem, 4rem rgba(0, 0, 0, 0.527); }
   @media only screen and (min-width: 100em) {
     .skills {
-      padding: 10rem; } }
+      padding: 10rem;
+      grid-column: 1 / 8; } }
   @media only screen and (max-width: 75em) {
     .skills {
       padding: 9rem;

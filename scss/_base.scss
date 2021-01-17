@@ -61,6 +61,8 @@ body {
 }
 
 .container {
+  max-width: 2000px;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: max-content repeat(3, min-content) max-content min-content;
   grid-template-columns: 7.15rem repeat(5, 1fr) 7.15rem;
