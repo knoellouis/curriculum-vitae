@@ -597,10 +597,6 @@ body {
     .footer__scroll-to-top a:hover {
       color: #3f4140; }
 
-@media only screen and (max-width: 100em) {
-  .navigation__mobile {
-    display: none; } }
-
 .navigation {
   position: fixed;
   width: 100%;
@@ -623,7 +619,7 @@ body {
       .navigation__nav--icon:active, .navigation__nav--icon:hover {
         fill: #f8b24f; }
 
-@media only screen and (max-width: 62.5em) {
+@media only screen and (min-width: 62.5em) {
   .navigation__mobile {
     display: none; } }
 
