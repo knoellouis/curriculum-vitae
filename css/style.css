@@ -611,12 +611,18 @@ body {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      padding: 2rem; }
+      padding: 2.5rem 25rem; }
+      @media only screen and (max-width: 75em) {
+        .navigation__nav--list {
+          padding: 2.5rem 15rem; } }
+      @media only screen and (max-width: 62.5em) {
+        .navigation__nav--list {
+          padding: 2.5rem 10rem; } }
     .navigation__nav--link {
       transition: all 0.2s; }
     .navigation__nav--icon {
-      width: 2.75rem;
-      height: 2.75rem;
+      width: 2rem;
+      height: 2rem;
       fill: #ffffff; }
       .navigation__nav--icon:active, .navigation__nav--icon:hover {
         fill: #f8b24f; }
