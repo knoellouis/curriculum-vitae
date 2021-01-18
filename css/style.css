@@ -242,8 +242,7 @@ body {
   grid-row: 5 / 6;
   grid-column: 2 / 7;
   padding: 7rem;
-  background-color: #726a63;
-  color: #ffffff;
+  color: #3f4140;
   display: grid;
   grid-template-rows: repeat(2, minmax(min-content, max-content));
   grid-template-columns: repeat(2, 1fr);
@@ -274,8 +273,9 @@ body {
     grid-template-rows: min-content;
     grid-template-columns: min-content min-content;
     grid-gap: 7rem;
-    height: 10rem;
-    padding: 3rem; }
+    height: 52%;
+    padding: 3rem;
+    background-color: #726a6369; }
     @media only screen and (max-width: 50em) {
       .contact__info {
         padding: 1rem;
@@ -284,7 +284,8 @@ body {
     @media only screen and (max-width: 25em) {
       .contact__info {
         grid-gap: 4rem;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        padding: 1.5rem; } }
     .contact__info-data {
       display: flex;
       justify-content: flex-start;
@@ -300,7 +301,8 @@ body {
         @media only screen and (max-width: 25em) {
           .contact__info-data--icon {
             width: 2rem;
-            height: 2rem; } }
+            height: 2rem;
+            margin-right: 1rem; } }
       .contact__info-data--phone {
         grid-row: 1 / span 2;
         grid-column: 1 / 2;
@@ -375,11 +377,11 @@ body {
       padding: 2rem;
       font-size: 1.3rem;
       font-family: "Lato", sans-serif;
-      color: #ffffff;
-      background-color: #ffffff41;
+      color: #3f4140;
+      background-color: #726a6369;
       box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06); }
       .contact__form-element::placeholder {
-        color: #ffffff; }
+        color: #726a63; }
       .contact__form-element:focus {
         outline: none;
         border: none; }
@@ -391,15 +393,15 @@ body {
       padding: 2rem;
       font-family: "Lato", sans-serif;
       font-size: 1.3rem;
-      color: #ffffff;
-      background-color: #ffffff41;
+      color: #3f4140;
+      background-color: #726a6369;
       width: 100%;
       height: 15rem;
       box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06); }
       .contact__form-message::placeholder {
         font-family: "Lato", sans-serif;
         font-size: 1.3rem;
-        color: #ffffff; }
+        color: #726a63; }
       .contact__form-message:focus {
         outline: none;
         border: none; }
@@ -619,7 +621,7 @@ body {
       .navigation__nav--icon:active, .navigation__nav--icon:hover {
         fill: #f8b24f; }
 
-@media only screen and (min-width: 62.5em) {
+@media only screen and (min-width: 50.1em) {
   .navigation__mobile {
     display: none; } }
 
