@@ -1,504 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keitha Noel&dash;Louis</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d57f35d6bc.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d57f35d6bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body class="container">
+  <body class="container">
     <div class="navigation">
-        <nav class="navigation__nav">
-            <ul class="navigation__nav--list">
-                <li class="navigation__nav--list-item">
-                    <a href="#intro" class="navigation__nav--link scrollTo">
-                        <svg class="navigation__nav--icon">
-                            <use xlink:href="img/sprite.svg#icon-home-run"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="navigation__nav--list-item">
-                    <a href="#about" class="navigation__nav--link scrollTo">
-                        <svg class="navigation__nav--icon">
-                            <use xlink:href="img/sprite.svg#icon-user"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="navigation__nav--list-item">
-                    <a href="#skills" class="navigation__nav--link scrollTo">
-                        <svg class="navigation__nav--icon">
-                            <use xlink:href="img/sprite.svg#icon-coding"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="navigation__nav--list-item">
-                    <a href="#projects" class="navigation__nav--link scrollTo">
-                        <svg class="navigation__nav--icon">
-                            <use xlink:href="img/sprite.svg#icon-menu"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="navigation__nav--list-item">
-                    <a href="#contact" class="navigation__nav--link scrollTo">
-                        <svg class="navigation__nav--icon">
-                            <use xlink:href="img/sprite.svg#icon-mail"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="navigation__nav">
+        <ul class="navigation__nav--list">
+          <li class="navigation__nav--list-item">
+            <a href="#intro" class="navigation__nav--link scrollTo">
+              <svg class="navigation__nav--icon">
+                <use xlink:href="img/sprite.svg#icon-home-run"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="navigation__nav--list-item">
+            <a href="#about" class="navigation__nav--link scrollTo">
+              <svg class="navigation__nav--icon">
+                <use xlink:href="img/sprite.svg#icon-user"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="navigation__nav--list-item">
+            <a href="#skills" class="navigation__nav--link scrollTo">
+              <svg class="navigation__nav--icon">
+                <use xlink:href="img/sprite.svg#icon-coding"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="navigation__nav--list-item">
+            <a href="#projects" class="navigation__nav--link scrollTo">
+              <svg class="navigation__nav--icon">
+                <use xlink:href="img/sprite.svg#icon-menu"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="navigation__nav--list-item">
+            <a href="#contact" class="navigation__nav--link scrollTo">
+              <svg class="navigation__nav--icon">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <div class="navigation__mobile">
-        <input type="checkbox" class="navigation__mobile--checkbox" id="navi-toggle">
+      <input
+        type="checkbox"
+        class="navigation__mobile--checkbox"
+        id="navi-toggle"
+      />
 
-        <label for="navi-toggle" class="navigation__mobile--button">
-            <span class="navigation__mobile--icon">&nbsp;</span>
-        </label>
+      <label for="navi-toggle" class="navigation__mobile--button">
+        <span class="navigation__mobile--icon">&nbsp;</span>
+      </label>
 
-        <div class="navigation__mobile--background">&nbsp;</div>
+      <div class="navigation__mobile--background">&nbsp;</div>
 
-        <nav class="navigation__mobile--nav">
-            <ul class="navigation__mobile--list">
-                <li class="navigation__mobile--item"><a href="#intro" class="navigation__mobile--link">Home</a>
-                </li>
-                <li class="navigation__mobile--item"><a href="#about" class="navigation__mobile--link">About</a>
-                </li>
-                <li class="navigation__mobile--item"><a href="#skills" class="navigation__mobile--link">Skills</a>
-                </li>
-                <li class="navigation__mobile--item"><a href="#projects" class="navigation__mobile--link">Project</a>
-                </li>
-                <li class="navigation__mobile--item"><a href="#contact" class="navigation__mobile--link">Contact</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="navigation__mobile--nav">
+        <ul class="navigation__mobile--list">
+          <li class="navigation__mobile--item">
+            <a href="#intro" class="navigation__mobile--link">Home</a>
+          </li>
+          <li class="navigation__mobile--item">
+            <a href="#about" class="navigation__mobile--link">About</a>
+          </li>
+          <li class="navigation__mobile--item">
+            <a href="#skills" class="navigation__mobile--link">Skills</a>
+          </li>
+          <li class="navigation__mobile--item">
+            <a href="#projects" class="navigation__mobile--link">Project</a>
+          </li>
+          <li class="navigation__mobile--item">
+            <a href="#contact" class="navigation__mobile--link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <header class="intro" id="intro">
-        <div class="intro__container">
-            <img class="intro__img" src="img/IMG_6470 small square.jpg" alt="">
-        </div>
+      <div class="intro__container">
+        <img class="intro__img" src="img/IMG_6470 small square.jpg" alt="" />
+      </div>
 
-        <h2 class="intro__hello heading-1">Hello<span class="intro__exclamation">!</span>
-        </h2>
-        <h2 class="intro__name heading-1">I'm Keitha<span class="intro__period">.</span>
-        </h2>
+      <h2 class="intro__hello heading-1">
+        Hello<span class="intro__exclamation">!</span>
+      </h2>
+      <h2 class="intro__name heading-1">
+        I'm Keitha<span class="intro__period">.</span>
+      </h2>
 
-        <h1 class="intro__jobtitle">Frontend Web Developer</h1>
-        <p class="intro__description">With a passion for modern and responsive web apps!</p>
+      <h1 class="intro__jobtitle">Frontend Web Developer</h1>
+      <p class="intro__description">
+        With a passion for modern and responsive web apps!
+      </p>
     </header>
 
     <section id="about" class="about">
-        <h2 class="about__heading heading-2 mb-lg">About Me</h2>
+      <h2 class="about__heading heading-2 mb-lg">About Me</h2>
 
-        <p class="about__info-description mb-md"> Ambitious Junior Frontend Developer with excellent
-            problem solving
-            skills. Experience creating both logical and innovative solutions to complexed web problems using HTML,
-            CSS and Javascript. Thorough, precise and appreciative of clean code. Passion for technology and mobile
-            web applications as well as user experience. Eager to learn and enjoys working in team-based
-            environments. </p>
+      <p class="about__info-description mb-md">
+        Ambitious Junior Frontend Developer with excellent problem solving
+        skills. Experience creating both logical and innovative solutions to
+        complexed web problems using HTML, CSS and Javascript. Thorough, precise
+        and appreciative of clean code. Passion for technology and mobile web
+        applications as well as user experience. Eager to learn and enjoys
+        working in team-based environments.
+      </p>
 
-        <button class="about__info-button btn mb-lg">
-            <a href="https://drive.google.com/file/d/14g_vPCj3AdHzpY9ieEdq8mfS19Ty00e-/view?usp=sharing">Download
-                CV</a>
-        </button>
+      <button class="about__info-button btn mb-lg">
+        <a
+          href="https://drive.google.com/file/d/14g_vPCj3AdHzpY9ieEdq8mfS19Ty00e-/view?usp=sharing"
+          target="_blank"
+          >Download CV</a
+        >
+      </button>
 
-        <div class="about__info-social">
-            <a href="https://www.linkedin.com/in/keitha-noel-louis-18aa78151/" class="about__info-social--link">
-                <svg class="about__info-social--icon">
-                    <use xlink:href="img/sprite.svg#icon-linkedin"></use>
-                </svg>
-            </a>
+      <div class="about__info-social">
+        <a
+          href="https://www.linkedin.com/in/keitha-noel-louis-18aa78151/"
+          class="about__info-social--link"
+          target="_blank"
+        >
+          <svg class="about__info-social--icon">
+            <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+          </svg>
+        </a>
 
-            <a href="https://www.xing.com/profile/Keitha_NoelLouis/cv" class="about__info-social--link">
-                <svg class="about__info-social--icon">
-                    <use xlink:href="img/sprite.svg#icon-xing"></use>
-                </svg>
-            </a>
+        <a
+          href="https://www.xing.com/profile/Keitha_NoelLouis/cv"
+          class="about__info-social--link"
+          target="_blank"
+        >
+          <svg class="about__info-social--icon">
+            <use xlink:href="img/sprite.svg#icon-xing"></use>
+          </svg>
+        </a>
 
-            <a href="https://github.com/knoellouis" class="about__info-social--link">
-                <svg class="about__info-social--icon">
-                    <use xlink:href="img/sprite.svg#icon-logo"></use>
-                </svg>
-            </a>
+        <a
+          href="https://github.com/knoellouis"
+          class="about__info-social--link"
+          target="_blank"
+        >
+          <svg class="about__info-social--icon">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="about__info-personal">
+        <div class="about__info-personal--name mb-md">
+          <h3 class="heading-3">Name:</h3>
+          <p>Keitha Noel-Louis</p>
+        </div>
+        <div class="about__info-personal--email mb-md">
+          <h3 class="heading-3">Email:</h3>
+          <p>knoellouis@gmail.com</p>
         </div>
 
-        <div class="about__info-personal">
-            <div class="about__info-personal--name mb-md">
-                <h3 class="heading-3">Name:</h3>
-                <p>Keitha Noel-Louis</p>
-            </div>
-            <div class="about__info-personal--email mb-md">
-                <h3 class="heading-3">Email:</h3>
-                <p>knoellouis@gmail.com</p>
-            </div>
-
-
-            <div class="about__info-personal--location mb-md">
-                <h3 class="heading-3">Location:</h3>
-                <p>Hamburg, DE</p>
-            </div>
-
-
-            <div class="about__info-personal--bday">
-                <h3 class="heading-3">Birthday:</h3>
-                <p>December 25, 1990</p>
-            </div>
+        <div class="about__info-personal--location mb-md">
+          <h3 class="heading-3">Location:</h3>
+          <p>Hamburg, DE</p>
         </div>
+
+        <div class="about__info-personal--bday">
+          <h3 class="heading-3">Birthday:</h3>
+          <p>December 25, 1990</p>
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="skills">
+      <h2 class="skills__heading heading-2 mb-md">Skills</h2>
 
-        <h2 class="skills__heading heading-2 mb-md">Skills</h2>
-
-
-        <div class="skills__skill-1">
-            <h3 class="skills__skill-1--heading">HTML <span class="skills__skill-1--percent">90%</span></h3>
-            <div class="skills__skill-1--fullbar">
-                <span class="skills__skill-1--progbar" style="width: 90%;"></span>
-            </div>
+      <div class="skills__skill-1">
+        <h3 class="skills__skill-1--heading">
+          HTML <span class="skills__skill-1--percent">90%</span>
+        </h3>
+        <div class="skills__skill-1--fullbar">
+          <span class="skills__skill-1--progbar" style="width: 90%"></span>
         </div>
+      </div>
 
-        <div class="skills__skill-2">
-            <h3 class="skills__skill-2--heading">CSS / Sass<span class="skills__skill-2--percent">80%</span></h3>
+      <div class="skills__skill-2">
+        <h3 class="skills__skill-2--heading">
+          CSS / Sass<span class="skills__skill-2--percent">80%</span>
+        </h3>
 
-            <div class="skills__skill-2--fullbar">
-                <span class="skills__skill-2--progbar" style="width: 80%;"></span>
-            </div>
+        <div class="skills__skill-2--fullbar">
+          <span class="skills__skill-2--progbar" style="width: 80%"></span>
         </div>
+      </div>
 
-        <div class="skills__skill-3">
-            <h3 class="skills__skill-3--heading">Bootstrap<span class="skills__skill-3--percent">75%</span></h3>
+      <div class="skills__skill-3">
+        <h3 class="skills__skill-3--heading">
+          Bootstrap<span class="skills__skill-3--percent">75%</span>
+        </h3>
 
-            <div class="skills__skill-3--fullbar">
-                <span class="skills__skill-3--progbar" style="width: 75%;"></span>
-            </div>
+        <div class="skills__skill-3--fullbar">
+          <span class="skills__skill-3--progbar" style="width: 75%"></span>
         </div>
+      </div>
 
-        <div class="skills__skill-4">
-            <h3 class="skills__skill-4--heading">Javascript (ES5 & ES6)<span class="skills__skill-4--percent">65%</span>
-            </h3>
+      <div class="skills__skill-4">
+        <h3 class="skills__skill-4--heading">
+          Javascript (ES5 & ES6)<span class="skills__skill-4--percent"
+            >65%</span
+          >
+        </h3>
 
-            <div class="skills__skill-4--fullbar">
-                <span class="skills__skill-4--progbar" style="width: 65%;"></span>
-            </div>
+        <div class="skills__skill-4--fullbar">
+          <span class="skills__skill-4--progbar" style="width: 65%"></span>
         </div>
+      </div>
 
-        <div class="skills__skill-5">
-            <h3 class="skills__skill-5--heading">jQuery<span class="skills__skill-5--percent">75%</span></h3>
+      <div class="skills__skill-5">
+        <h3 class="skills__skill-5--heading">
+          jQuery<span class="skills__skill-5--percent">75%</span>
+        </h3>
 
-            <div class="skills__skill-5--fullbar">
-                <span class="skills__skill-5--progbar" style="width: 75%;"></span>
-            </div>
+        <div class="skills__skill-5--fullbar">
+          <span class="skills__skill-5--progbar" style="width: 75%"></span>
         </div>
+      </div>
 
-        <div class="skills__skill-6">
-            <h3 class="skills__skill-6--heading">Node.js<span class="skills__skill-6--percent">80%</span></h3>
+      <div class="skills__skill-6">
+        <h3 class="skills__skill-6--heading">
+          Node.js<span class="skills__skill-6--percent">80%</span>
+        </h3>
 
-            <div class="skills__skill-6--fullbar">
-                <span class="skills__skill-6--progbar" style="width: 80%;"></span>
-            </div>
+        <div class="skills__skill-6--fullbar">
+          <span class="skills__skill-6--progbar" style="width: 80%"></span>
         </div>
+      </div>
 
-        <div class="skills__skill-7">
-            <h3 class="skills__skill-7--heading">Express.js<span class="skills__skill-7--percent">70%</span></h3>
+      <div class="skills__skill-7">
+        <h3 class="skills__skill-7--heading">
+          Express.js<span class="skills__skill-7--percent">70%</span>
+        </h3>
 
-            <div class="skills__skill-7--fullbar">
-                <span class="skills__skill-7--progbar" style="width: 70%;"></span>
-            </div>
+        <div class="skills__skill-7--fullbar">
+          <span class="skills__skill-7--progbar" style="width: 70%"></span>
         </div>
+      </div>
 
-        <div class="skills__skill-8">
-            <h3 class="skills__skill-8--heading">SQL<span class="skills__skill-8--percent">60%</span></h3>
+      <div class="skills__skill-8">
+        <h3 class="skills__skill-8--heading">
+          SQL<span class="skills__skill-8--percent">60%</span>
+        </h3>
 
-            <div class="skills__skill-8--fullbar">
-                <span class="skills__skill-8--progbar" style="width: 60%;"></span>
-            </div>
+        <div class="skills__skill-8--fullbar">
+          <span class="skills__skill-8--progbar" style="width: 60%"></span>
         </div>
+      </div>
 
-        <div class="skills__skill-9">
-            <h3 class="skills__skill-9--heading">MongoDB<span class="skills__skill-9--percent">60%</span></h3>
+      <div class="skills__skill-9">
+        <h3 class="skills__skill-9--heading">
+          MongoDB<span class="skills__skill-9--percent">60%</span>
+        </h3>
 
-            <div class="skills__skill-9--fullbar">
-                <span class="skills__skill-9--progbar" style="width: 60%;"></span>
-            </div>
+        <div class="skills__skill-9--fullbar">
+          <span class="skills__skill-9--progbar" style="width: 60%"></span>
         </div>
+      </div>
 
-        <div class="skills__skill-10">
-            <h3 class="skills__skill-10--heading">Git / Github<span class="skills__skill-10--percent">80%</span></h3>
-            <div class="skills__skill-10--fullbar">
-                <span class="skills__skill-10--progbar" style="width: 80%;"></span>
-            </div>
+      <div class="skills__skill-10">
+        <h3 class="skills__skill-10--heading">
+          Git / Github<span class="skills__skill-10--percent">80%</span>
+        </h3>
+        <div class="skills__skill-10--fullbar">
+          <span class="skills__skill-10--progbar" style="width: 80%"></span>
         </div>
+      </div>
 
-        <div class="skills__skill-11">
-            <h3 class="skills__skill-11--heading">Adobe XD<span class="skills__skill-11--percent">60%</span>
-            </h3>
-            <div class="skills__skill-11--fullbar">
-                <span class="skills__skill-11--progbar" style="width: 60%;"></span>
-            </div>
+      <div class="skills__skill-11">
+        <h3 class="skills__skill-11--heading">
+          Adobe XD<span class="skills__skill-11--percent">60%</span>
+        </h3>
+        <div class="skills__skill-11--fullbar">
+          <span class="skills__skill-11--progbar" style="width: 60%"></span>
         </div>
-        <div class="skills__skill-12">
-            <h3 class="skills__skill-12--heading">Adobe Illustrator<span class="skills__skill-12--percent">80%</span>
-            </h3>
-            <div class="skills__skill-12--fullbar">
-                <span class="skills__skill-12--progbar" style="width: 80%;"></span>
-            </div>
+      </div>
+      <div class="skills__skill-12">
+        <h3 class="skills__skill-12--heading">
+          Adobe Illustrator<span class="skills__skill-12--percent">80%</span>
+        </h3>
+        <div class="skills__skill-12--fullbar">
+          <span class="skills__skill-12--progbar" style="width: 80%"></span>
         </div>
-        <div class="skills__skill-13">
-            <h3 class="skills__skill-13--heading">Adobe Photoshop<span class="skills__skill-13--percent">70%</span>
-            </h3>
+      </div>
+      <div class="skills__skill-13">
+        <h3 class="skills__skill-13--heading">
+          Adobe Photoshop<span class="skills__skill-13--percent">70%</span>
+        </h3>
 
-            <div class="skills__skill-13--fullbar">
-                <span class="skills__skill-13--progbar" style="width: 70%;"></span>
-            </div>
+        <div class="skills__skill-13--fullbar">
+          <span class="skills__skill-13--progbar" style="width: 70%"></span>
         </div>
+      </div>
     </section>
 
     <section id="projects" class="projects">
+      <h2 class="projects__heading heading-2 mb-lg">Recent Projects</h2>
 
-        <h2 class="projects__heading heading-2 mb-lg"> Recent Projects</h2>
+      <div class="project project__1">
+        <h3 class="project__title heading-3 mb-sm">Kim W Designs</h3>
+        <img class="project__img mb-sm" src="img/kimwdesigns.jpg" alt="" />
+        <p class="project__description">
+          A responsive online retail shop designed and built by me. Like and
+          size buttons can be toggled on and off.
+        </p>
 
-        <div class="project project__1">
-            <h3 class="project__title heading-3 mb-sm">Kim W Designs</h3>
-            <img class="project__img mb-sm" src="img/kimwdesigns.jpg" alt="">
-            <p class="project__description">A responsive online retail shop designed and built by me. Like and size
-                buttons can be toggled on and off.</p>
-
-            <div class="project__buttons">
-                <button class="project__buttons-1 btn">
-                    <a href="https://github.com/knoellouis/kimwdesigns">
-                        View Code
-                    </a>
-                </button>
-                <button class="project__buttons-2 btn">
-                    <a href="https://kimwdesigns.netlify.app">
-                        View Demo
-                    </a>
-                </button>
-            </div>
-
+        <div class="project__buttons">
+          <button class="project__buttons-1 btn">
+            <a href="https://github.com/knoellouis/kimwdesigns" target="_blank">
+              View Code
+            </a>
+          </button>
+          <button class="project__buttons-2 btn">
+            <a href="https://kimwdesigns.netlify.app" target="_blank">
+              View Demo
+            </a>
+          </button>
         </div>
-        <div class="project project__2">
-            <h3 class="project__title heading-3 mb-sm">Bankist</h3>
-            <img class="project__img mb-sm" src="img/Bankist.png" alt="">
-            <p class="project__description">Log in (user: js and password: 1111). Transfer money to another user(jd,
-                2222), request loans and close the
-                account using the interface.</p>
+      </div>
+      <div class="project project__2">
+        <h3 class="project__title heading-3 mb-sm">Bankist</h3>
+        <img class="project__img mb-sm" src="img/Bankist.png" alt="" />
+        <p class="project__description">
+          Log in (user: js and password: 1111). Transfer money to another
+          user(jd, 2222), request loans and close the account using the
+          interface.
+        </p>
 
-            <div class="project__buttons">
-                <button class="project__buttons-1 btn">
-                    <a href="https://github.com/knoellouis/bankistapp">
-                        View Code
-                    </a>
-                </button>
-                <button class="project__buttons-2 btn">
-                    <a href="https://banktobank.netlify.app">
-                        View Demo
-                    </a>
-                </button>
-            </div>
-
+        <div class="project__buttons">
+          <button class="project__buttons-1 btn">
+            <a href="https://github.com/knoellouis/bankistapp" target="_blank">
+              View Code
+            </a>
+          </button>
+          <button class="project__buttons-2 btn">
+            <a href="https://banktobank.netlify.app" target="_blank">
+              View Demo
+            </a>
+          </button>
         </div>
-        <div class="project project__3">
-            <h3 class="project__title heading-3 mb-sm">Forkify</h3>
-            <img class="project__img mb-sm" src="img/Forkify.jpg" alt="">
-            <p class="project__description">A recipe web app which allows you to search for recipes,
-                adjust serving sizes, create and edit a shopping list according to serving size.</p>
+      </div>
+      <div class="project project__3">
+        <h3 class="project__title heading-3 mb-sm">Forkify</h3>
+        <img class="project__img mb-sm" src="img/Forkify.jpg" alt="" />
+        <p class="project__description">
+          A recipe web app which allows you to search for recipes, adjust
+          serving sizes, create and edit a shopping list according to serving
+          size.
+        </p>
 
-            <div class="project__buttons">
-                <button class="project__buttons-1 btn">
-                    <a href="https://github.com/knoellouis/Forkify-App">
-                        View Code
-                    </a>
-                </button>
-                <button class="project__buttons-2 btn">
-                    <a href="https://forkify-recipe-app.netlify.app">
-                        View Demo
-                    </a>
-                </button>
-            </div>
-
+        <div class="project__buttons">
+          <button class="project__buttons-1 btn">
+            <a href="https://github.com/knoellouis/Forkify-App" target="_blank">
+              View Code
+            </a>
+          </button>
+          <button class="project__buttons-2 btn">
+            <a href="https://forkify-recipe-app.netlify.app" target="_blank">
+              View Demo
+            </a>
+          </button>
         </div>
+      </div>
 
-        <div class="project project__4">
-            <h3 class="project__title heading-3 mb-sm">Budget App</h3>
-            <img class="project__img mb-sm" src="img/budgety.jpg" alt="">
-            <p class="project__description">An app where income and expenses with descriptions can be
-                added or removed and provide expense percentages. </p>
+      <div class="project project__4">
+        <h3 class="project__title heading-3 mb-sm">Budget App</h3>
+        <img class="project__img mb-sm" src="img/budgety.jpg" alt="" />
+        <p class="project__description">
+          An app where income and expenses with descriptions can be added or
+          removed and provide expense percentages.
+        </p>
 
-            <div class="project__buttons">
-                <button class="project__buttons-1 btn">
-                    <a href="https://github.com/knoellouis/Budget-App">
-                        View Code
-                    </a>
-                </button>
-                <button class="project__buttons-2 btn">
-                    <a href="https://budgety-budget-app.netlify.app/">
-                        View Demo
-                    </a>
-                </button>
-            </div>
-
+        <div class="project__buttons">
+          <button class="project__buttons-1 btn">
+            <a href="https://github.com/knoellouis/Budget-App" target="_blank">
+              View Code
+            </a>
+          </button>
+          <button class="project__buttons-2 btn">
+            <a href="https://budgety-budget-app.netlify.app/" target="_blank">
+              View Demo
+            </a>
+          </button>
         </div>
-        <div class="project project__5">
-            <h3 class="project__title heading-3 mb-sm">Trillo</h3>
-            <img class="project__img mb-sm" src="img/Trillo.jpg" alt="">
-            <p class="project__description">A modern style booking web app designed to help users find
-                make and save bookings for hotels, flights, car rentals and tours. </p>
+      </div>
+      <div class="project project__5">
+        <h3 class="project__title heading-3 mb-sm">Trillo</h3>
+        <img class="project__img mb-sm" src="img/Trillo.jpg" alt="" />
+        <p class="project__description">
+          A modern style booking web app designed to help users find make and
+          save bookings for hotels, flights, car rentals and tours.
+        </p>
 
-            <div class="project__buttons">
-                <button class="project__buttons-1 btn">
-                    <a href="https://github.com/knoellouis/Booking-App">
-                        View Code
-                    </a>
-                </button>
-                <button class="project__buttons-2 btn">
-                    <a href="https://trillobooking.netlify.app/">
-                        View Demo
-                    </a>
-                </button>
-            </div>
+        <div class="project__buttons">
+          <button class="project__buttons-1 btn">
+            <a href="https://github.com/knoellouis/Booking-App" target="_blank">
+              View Code
+            </a>
+          </button>
+          <button class="project__buttons-2 btn">
+            <a href="https://trillobooking.netlify.app/" target="_blank">
+              View Demo
+            </a>
+          </button>
         </div>
-        <div class="project project__6">
-            <h3 class="project__title heading-3 mb-sm">Nexter</h3>
-            <img class="project__img mb-sm" src="img/Nexter.png" alt="">
-            <p class="project__description">A modern style real estate web app designed to help users find a realtor or
-                their dream homes</p>
+      </div>
+      <div class="project project__6">
+        <h3 class="project__title heading-3 mb-sm">Nexter</h3>
+        <img class="project__img mb-sm" src="img/Nexter.png" alt="" />
+        <p class="project__description">
+          A modern style real estate web app designed to help users find a
+          realtor or their dream homes
+        </p>
 
-            <div class="project__buttons">
-                <button class="project__buttons-1 btn">
-                    <a href="https://github.com/knoellouis/Nexter">
-                        View Code
-                    </a>
-                </button>
-                <button class="project__buttons-2 btn">
-                    <a href="https://nexterrealestate.netlify.app">
-                        View Demo
-                    </a>
-                </button>
-            </div>
+        <div class="project__buttons">
+          <button class="project__buttons-1 btn">
+            <a href="https://github.com/knoellouis/Nexter" target="_blank">
+              View Code
+            </a>
+          </button>
+          <button class="project__buttons-2 btn">
+            <a href="https://nexterrealestate.netlify.app" target="_blank">
+              View Demo
+            </a>
+          </button>
         </div>
-        <div class="project project__7">
-            <h3 class="project__title heading-3 mb-sm">Natours</h3>
-            <img class="project__img mb-sm" src="img/Natours.png" alt="">
-            <p class="project__description">A nature tour app which advertises three different tours for three different
-                kinds of adventurers. </p>
+      </div>
+      <div class="project project__7">
+        <h3 class="project__title heading-3 mb-sm">Natours</h3>
+        <img class="project__img mb-sm" src="img/Natours.png" alt="" />
+        <p class="project__description">
+          A nature tour app which advertises three different tours for three
+          different kinds of adventurers.
+        </p>
 
-            <div class="project__buttons">
-                <button class="project__buttons-1 btn">
-                    <a href="https://github.com/knoellouis/Natours">
-                        View Code
-                    </a>
-                </button>
-                <button class="project__buttons-2 btn">
-                    <a href="https://touringnatures.netlify.app">
-                        View Demo
-                    </a>
-                </button>
-            </div>
+        <div class="project__buttons">
+          <button class="project__buttons-1 btn">
+            <a href="https://github.com/knoellouis/Natours" target="_blank">
+              View Code
+            </a>
+          </button>
+          <button class="project__buttons-2 btn">
+            <a href="https://touringnatures.netlify.app" target="_blank">
+              View Demo
+            </a>
+          </button>
         </div>
-        <div class="project project__8">
-            <h3 class="project__title heading-3 mb-sm">Museum of Candy</h3>
-            <img class="project__img mb-sm" src="img/MuseumofCandy.png" alt="">
-            <p class="project__description">A brilliant web design displaying delicious sweet treats using bootstrap
-                features. </p>
+      </div>
+      <div class="project project__8">
+        <h3 class="project__title heading-3 mb-sm">Museum of Candy</h3>
+        <img class="project__img mb-sm" src="img/MuseumofCandy.png" alt="" />
+        <p class="project__description">
+          A brilliant web design displaying delicious sweet treats using
+          bootstrap features.
+        </p>
 
-            <div class="project__buttons">
-                <button class="project__buttons-1 btn">
-                    <a href="https://github.com/knoellouis/MuseumofCandy">
-                        View Code
-                    </a>
-                </button>
-                <button class="project__buttons-2 btn">
-                    <a href="https://museumforcandy.netlify.app">
-                        View Demo
-                    </a>
-                </button>
-            </div>
+        <div class="project__buttons">
+          <button class="project__buttons-1 btn">
+            <a
+              href="https://github.com/knoellouis/MuseumofCandy"
+              target="_blank"
+            >
+              View Code
+            </a>
+          </button>
+          <button class="project__buttons-2 btn">
+            <a href="https://museumforcandy.netlify.app" target="_blank">
+              View Demo
+            </a>
+          </button>
         </div>
-        <div class="project project__9">
-            <h3 class="project__title heading-3 mb-sm">Photopia</h3>
-            <img class="project__img mb-sm" src="img/Photoblog.png" alt="">
-            <p class="project__description">A black and white photograph collection layed out simply like a grid. </p>
+      </div>
+      <div class="project project__9">
+        <h3 class="project__title heading-3 mb-sm">Photopia</h3>
+        <img class="project__img mb-sm" src="img/Photoblog.png" alt="" />
+        <p class="project__description">
+          A black and white photograph collection layed out simply like a grid.
+        </p>
 
-            <div class="project__buttons">
-                <button class="project__buttons-1 btn">
-                    <a href="https://github.com/knoellouis/Photopia">
-                        View Code
-                    </a>
-                </button>
-                <button class="project__buttons-2 btn">
-                    <a href="https://photopia.netlify.app">
-                        View Demo
-                    </a>
-                </button>
-            </div>
+        <div class="project__buttons">
+          <button class="project__buttons-1 btn">
+            <a href="https://github.com/knoellouis/Photopia" target="_blank">
+              View Code
+            </a>
+          </button>
+          <button class="project__buttons-2 btn">
+            <a href="https://photopia.netlify.app" target="_blank">
+              View Demo
+            </a>
+          </button>
         </div>
+      </div>
     </section>
 
     <section id="contact" class="contact">
+      <h2 class="contact__heading heading-2 mb-lg">Get in touch</h2>
 
-        <h2 class="contact__heading heading-2 mb-lg">Get in touch</h2>
-
-        <div class="contact__info">
-            <div class="contact__info-data--phone">
-                <svg class="contact__info-data--icon">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-                <h3>Phone</h3>
-                <p>+49 0175 629 6889</p>
-            </div>
-
-            <div class="contact__info-data--email">
-                <svg class="contact__info-data--icon">
-                    <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
-                <h3>Email</h3>
-                <p>knoellouis@gmail.com</p>
-            </div>
-
-            <div class="contact__info-data--address">
-                <svg class="contact__info-data--icon">
-                    <use xlink:href="img/sprite.svg#icon-gps"></use>
-                </svg>
-                <h3>Location</h3>
-                <p>Hamburg</p>
-            </div>
-
+      <div class="contact__info">
+        <div class="contact__info-data--phone">
+          <svg class="contact__info-data--icon">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          <h3>Phone</h3>
+          <p>+49 0175 629 6889</p>
         </div>
 
-        <form class="contact__form" action="https://formspree.io/mrgyrkzd" method="POST">
-            <input class="contact__form-element mb-sm" type="text" name="_replyto" placeholder="Email" required>
-            <input class="contact__form-element mb-sm" type="text" placeholder="Subject">
-            <textarea class="contact__form-message mb-lg" name="message" cols="30" rows="10" placeholder="Your message"
-                required></textarea>
-            <button class="contact__form-button btn" type="submit">Send Message </button>
-        </form>
+        <div class="contact__info-data--email">
+          <svg class="contact__info-data--icon">
+            <use xlink:href="img/sprite.svg#icon-mail"></use>
+          </svg>
+          <h3>Email</h3>
+          <p>knoellouis@gmail.com</p>
+        </div>
 
+        <div class="contact__info-data--address">
+          <svg class="contact__info-data--icon">
+            <use xlink:href="img/sprite.svg#icon-gps"></use>
+          </svg>
+          <h3>Location</h3>
+          <p>Hamburg</p>
+        </div>
+      </div>
 
+      <form
+        class="contact__form"
+        action="https://formspree.io/mrgyrkzd"
+        method="POST"
+      >
+        <input
+          class="contact__form-element mb-sm"
+          type="text"
+          name="_replyto"
+          placeholder="Email"
+          required
+        />
+        <input
+          class="contact__form-element mb-sm"
+          type="text"
+          placeholder="Subject"
+        />
+        <textarea
+          class="contact__form-message mb-lg"
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Your message"
+          required
+        ></textarea>
+        <button class="contact__form-button btn" type="submit">
+          Send Message
+        </button>
+      </form>
     </section>
 
-
-
     <footer class="footer">
+      <button class="footer__scroll-to-top mb-sm">
+        <a href="#intro" class="scrollTo"><i class="fas fa-arrow-up"></i></a>
+        <p>back to top</p>
+      </button>
 
-        <button class="footer__scroll-to-top mb-sm">
-            <a href="#intro" class="scrollTo"><i class="fas fa-arrow-up"></i></a>
-            <p>back to top</p>
-        </button>
-
-        <p class="footer__credit"> Icons made by <a href="https://www.flaticon.com/authors/prettycons"
-                title="prettycons"> prettycons </a> from <a href="https://www.flaticon.com/" title="Flaticon">
-                www.flaticon.com</a></p>
-
+      <p class="footer__credit">
+        Icons made by
+        <a
+          href="https://www.flaticon.com/authors/prettycons"
+          title="prettycons"
+        >
+          prettycons
+        </a>
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com</a
+        >
+      </p>
     </footer>
 
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
